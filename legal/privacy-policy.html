@@ -1,0 +1,682 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Privacy Policy</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="028945c6-4f0c-4cb8-a4a7-b37230d8f004" class="page sans"><header><h1 class="page-title">Privacy Policy</h1></header><div class="page-body"><p id="05882b85-09be-489f-bb12-7dec4f4b2b79" class="">
+</p><h2 id="018acb5b-8633-4233-988c-be8dd45c6b32" class="">PRIVACY POLICY</h2><p id="3d8369aa-aac2-42ea-9f71-f0257d251076" class=""><strong>Last Modified: </strong><strong><time>@January 5, 2022</time></strong><strong> </strong></p><p id="8c68f5ca-6f76-47e8-9a20-50bd5779ceca" class="">
+</p><h2 id="1e1f3fb6-54be-408c-bbf5-b06850d6ab61" class="">IMPORTANT POINTS.</h2><p id="83348479-ad82-43e8-831d-a092a042950c" class="">
+</p><h3 id="130831d4-61eb-425b-9bd4-a03f12f5983d" class=""><strong>1.</strong> <strong>OVERVIEW</strong></h3><p id="529cd0dd-f3dd-4d4b-9caf-834414675ef8" class="">Fanszila International Limited and its subsidiaries (collectively, “<strong>FansZila</strong>,” “<strong>we</strong>,” “<strong>us</strong>,” “<strong>our</strong>”) respect your privacy and are committed to protecting the personal data we hold about you.If you have questions, comments, or concerns about this Privacy Notice or our processing of personal data, please see the bottom of this Privacy Notice for information about how to contact us. FansZila is the data controller of the personal data collected, and is responsible for the processing of your personal data.</p><p id="b1ea0e47-3604-40a3-9324-e0abffc34851" class="">FansZila is a social network which enables users to share their content; other users to enjoy content and for some to do both. We refer to those users who share content as “<strong>Creators</strong>” and those users who pay to view Creators’ content as “<strong>Fans</strong>”. This Privacy Notice explains our practices with respect to personal data we collect and process about you. This includes information we collect through, or in association with, our website located at <a href="http://www.fanszila.com">www.FansZila.com</a>, our services that we may offer from time to time via our website, our related social media sites (Twitter and Instagram), or otherwise through your interactions with us (the website, our social media pages, and services, collectively, the “<strong>Services</strong>”).</p><p id="816d2b5d-6811-4566-b0ff-d8df31fc416b" class="">
+</p><p id="e186ea1e-c290-4895-b6cc-602f415c03b0" class=""><em>Please review the following to understand how we process and safeguard personal data about you. By using any of our Services, whether by visiting our website or otherwise, and/or by voluntarily providing personal data to us, you acknowledge that you have read and understood the practices contained in this Privacy Notice. This Privacy Notice may be revised from time to time, so please ensure that you check this Privacy Notice periodically to remain fully informed.</em><div class="indented"><p id="dee01a02-db9b-4398-acb0-a59bb179289e" class=""><span style="border-bottom:0.05em solid">PERSONAL DATA WE COLLECT</span></p><ul id="46ba251d-08c9-4c15-91f7-a1fc610b26ed" class="bulleted-list"><li style="list-style-type:disc">Categories of Personal Data We Collect</li></ul><ul id="957b7ec0-c74b-4b1b-806c-69c3194ef519" class="bulleted-list"><li style="list-style-type:disc">How We Use Your Personal Data</li></ul><ul id="5ff5d5cc-65e2-4608-bfc3-885eb358116c" class="bulleted-list"><li style="list-style-type:disc">How We Obtain Your Personal Data</li></ul><ul id="a7f925a2-7570-4467-8740-74a1fe48b551" class="bulleted-list"><li style="list-style-type:disc">Legal Bases for Processing</li></ul><ul id="ce13ecd6-3a61-4c44-a593-dce60e40563c" class="bulleted-list"><li style="list-style-type:disc">Who We Share Your Personal Data With</li></ul><ul id="1d95acf7-5b21-44dd-bbbc-1b4bb884c2de" class="bulleted-list"><li style="list-style-type:disc">Personal Data We Share</li></ul></div></p><p id="a161b04e-7ef5-47e4-bd55-238683df23aa" class=""><div class="indented"><p id="b12fb938-9c41-4ec4-aeef-82b05dd2ddad" class=""><span style="border-bottom:0.05em solid">YOUR RIGHTS REGARDING PERSONAL DATA</span></p><ul id="3d4d5d50-e5cf-4784-be57-3e4ed812eb24" class="bulleted-list"><li style="list-style-type:disc">Accessing, Modifying, Rectifying, and Correcting Collected Personal Data</li></ul><p id="4452cf04-7b36-4079-9914-df8bff9eaa90" class="">
+</p><p id="4c0d7b21-88e9-4b20-8d49-23be6e42818a" class=""><span style="border-bottom:0.05em solid">YOUR CHOICES</span></p><ul id="2e3530dc-2f43-4609-83b8-65ea6cfbb58e" class="bulleted-list"><li style="list-style-type:disc">Communications Opt-Out</li></ul><ul id="64808e71-90d6-4199-9624-a29cbacefee8" class="bulleted-list"><li style="list-style-type:disc">Location Information</li></ul><ul id="8e7182b1-e57c-4d2f-af7e-941fd5e7a1f6" class="bulleted-list"><li style="list-style-type:disc">Cookies and Web Tracking</li></ul><p id="1d7bafde-8112-4f18-861a-9827fc20eb13" class="">
+</p><p id="adb29c5c-37a2-48b0-9972-ba370b1f2955" class=""><span style="border-bottom:0.05em solid">PROTECTING PERSONAL DATA</span><span style="border-bottom:0.05em solid">RETENTION OF PERSONAL DATA</span><span style="border-bottom:0.05em solid">OTHER IMPORTANT INFORMATION ABOUT PERSONAL DATA AND THE SERVICES</span></p><ul id="8590277d-8db9-4f6f-9282-06bb71140f4a" class="bulleted-list"><li style="list-style-type:disc">Identity Verification</li></ul><ul id="34e6bed9-d2d9-4733-8c64-d42d36c5a8b7" class="bulleted-list"><li style="list-style-type:disc">Payment Information</li></ul><ul id="9473b057-4be2-43bb-862b-5cdeec0ae175" class="bulleted-list"><li style="list-style-type:disc">Collection of Personal Data from Children</li></ul><ul id="bf7bbd96-5653-44cb-870c-aa1b39407b73" class="bulleted-list"><li style="list-style-type:disc">Third-Party Websites and Services</li></ul><ul id="7b7e68aa-328b-4dd0-947a-047800b8f24f" class="bulleted-list"><li style="list-style-type:disc">Business Transfer</li></ul><ul id="63877173-0c40-4d75-b90b-81db6cd88e61" class="bulleted-list"><li style="list-style-type:disc">Do Not Track</li></ul><ul id="5ce535c7-ba3e-4d51-8911-fdf04de9e9af" class="bulleted-list"><li style="list-style-type:disc">International Use</li></ul><p id="eccd8973-f81f-4bbb-8d76-d938950efbd0" class="">
+</p><p id="9a00e08d-31cf-44ab-a34a-5afd82e42c7e" class=""><span style="border-bottom:0.05em solid">MODIFICATIONS AND UPDATES TO THIS PRIVACY NOTICE</span><span style="border-bottom:0.05em solid">APPLICABILITY OF THIS PRIVACY NOTICE</span><span style="border-bottom:0.05em solid">ADDITIONAL INFORMATION AND ASSISTANCE</span></p><p id="1e8a082d-86ca-4c12-8c04-5865674eb200" class="">
+</p></div></p><p id="2a0e41ad-537a-4be4-b150-29c6c60280cd" class=""><strong>2.</strong> <strong>PERSONAL DATA WE COLLECT</strong></p><p id="167dc4eb-a9ad-4800-8475-1b5497e4de93" class="">We collect information that identifies, relates to, describes, is reasonably capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household (“<strong>personal data</strong>”). In addition, we may collect data that is not identifiable to you or otherwise associated with you, such as aggregated data, and is not personal data. To the extent this data is stored or associated with personal data, it will be treated as personal data; otherwise, the data is not subject to this Privacy Notice.<div class="indented"><p id="17c38912-119b-4044-8c7f-3ad117b149b1" class=""><strong>a. Categories of Personal Data We Collect</strong></p><p id="0db94970-d9d8-4d39-b052-ba2a2ecf78f6" class="">The types of personal data we collect about you depends on your interactions with us and your use of the Services. In the past twelve (12) months, we collected the below categories of personal data from our users:<div class="indented"><ol type="1" id="de988a66-bfba-4cfb-8a66-b713ad10455b" class="numbered-list" start="1"><li>Identifiers such as a real name, alias, postal address, internet protocol address, email address, account name, social security number, driver’s license number, passport number, or other similar identifiers.</li></ol><ol type="1" id="515b53f7-3857-4563-8f6e-45c96e9c57b7" class="numbered-list" start="2"><li>Commercial information, including records of personal property, products or services purchased, obtained, or considered, or other purchasing or consuming histories or tendencies.</li></ol><ol type="1" id="f8a40e6c-8b26-442a-9401-7bc2b34b20a1" class="numbered-list" start="3"><li>Biometric information. Note: While we do not collect biometric information, if you choose to authenticate yourself through certain service providers we use, they may collect biometric information subject to their privacy policies, but we are never provided with access to that information.</li></ol><ol type="1" id="7fcf744e-7632-41ae-8de3-ab6792250441" class="numbered-list" start="4"><li>Internet or other electronic network activity information, including, but not limited to, browsing history, search history, and information regarding a consumer’s interaction with an internet website, application, or advertisement.</li></ol><ol type="1" id="3bd787cf-5f1a-42f1-a8ab-8d41db8a9217" class="numbered-list" start="5"><li>Audio, electronic, visual, thermal, olfactory, or similar information.</li></ol><ol type="1" id="b28efd79-2396-4a96-8d61-1be0eb2d0773" class="numbered-list" start="6"><li>Professional or employment-related information.</li></ol></div></p><p id="41f5af6c-5e87-4fe3-92de-ac4c7976bbf4" class="">We will not collect additional categories of personal data other than those categories listed above. If we intend to collect additional categories of personal data, we will provide you with a new notice at or before the time of collection.</p><p id="78e33391-82d8-421a-8c66-ca381265e68b" class="">
+</p><p id="435aeff9-ce46-4026-a465-f0d4637f4d9e" class=""><strong>b. How We Use Your Personal Data</strong></p><p id="344ee054-e835-40f6-983c-e75c69ce2de1" class="">We strive to ensure that the content can be enjoyed by everyone, and to keep the content appropriate, tasteful and lawful. To do that, we collect and process your personal data for the following business and commercial purposes:<div class="indented"><ol type="1" id="3ba5241a-0f05-4348-b8f1-de93ae9ee055" class="numbered-list" start="1"><li>Developing, improving, operating, providing, predicting, or performing, including maintaining or servicing accounts, enhancing the Services and your experience with them, providing customer service, processing or fulfilling transactions, verifying your identity, and processing payments.</li></ol><ol type="1" id="3e7369b7-fe59-464b-bb48-d8fe1eed4432" class="numbered-list" start="2"><li>Communicating with you by email and text about the Services, verifying your identity, responding to support inquiries or, sharing information about the Services.</li></ol><ol type="1" id="832e7e41-59c6-4edd-9e3b-ad82a54edb7b" class="numbered-list" start="3"><li>Auditing related to a current interaction with the user and concurrent transactions.</li></ol><ol type="1" id="abb7870e-d3bb-411c-bf41-46c5d3d771fb" class="numbered-list" start="4"><li>Detecting security incidents, protecting against malicious, deceptive, fraudulent, or illegal activity, and prosecuting those responsible for that activity.</li></ol><ol type="1" id="5431a0ca-58de-4557-9c95-16f362e657fc" class="numbered-list" start="5"><li>Debugging to identify and repair errors that impair existing intended functionality.</li></ol><ol type="1" id="c9293a6b-bec9-4bb8-ab99-e2f158494e76" class="numbered-list" start="6"><li>Undertaking internal research for technological development and demonstration.</li></ol><ol type="1" id="59a06bcd-331e-47c4-b143-2bd5cc6315d9" class="numbered-list" start="7"><li>Undertaking activities to verify or maintain the quality or safety of the Services owned, manufactured, manufactured for, or controlled by us, and to improve, upgrade, or enhance the Services owned, manufactured, manufactured for, or controlled by us.</li></ol><ol type="1" id="97adb56f-7c47-45d5-9991-747953270217" class="numbered-list" start="8"><li>Complying with applicable laws, regulations, rules and requests of relevant law enforcement and/or other governmental agencies, or for other purposes, as permitted or required by law.</li></ol><ol type="1" id="90520a2f-3907-4a69-b1b4-be5ed4a9a8f2" class="numbered-list" start="9"><li>Enforcing our Terms of Service and other usage policies.</li></ol><ol type="1" id="06e1856c-8cea-4cab-bd7f-7fab414f9d10" class="numbered-list" start="10"><li>As necessary or appropriate to protect the rights, property, and safety of our users, us, and other third parties.</li></ol></div></p><p id="cb1dfdfa-2fca-428d-893a-68eb934bcbc3" class="">We will not use the personal data we collected for materially different, unrelated, or incompatible purposes without providing you with notice and obtaining your consent.</p><p id="8e5bdd8f-e590-45eb-82e6-69a45f650335" class="">
+</p><p id="790ac066-51c9-4aa8-8730-44989e6fa1b5" class=""><strong>c. How We Obtain Your Personal Data</strong></p><p id="6fbb28c8-2f79-4184-aac6-17922fc901ee" class="">We collect your personal data from the following categories of sources:<div class="indented"><ul id="771f794a-6a66-4e03-846f-5af48ec1e0f4" class="bulleted-list"><li style="list-style-type:disc"><strong>Directly from you</strong>. When you provide it to us directly to open an account and use the Services, or when you update the information in your account (see the “<em><strong>Accessing, Modifying, Rectifying, and Correcting Collected Personal Data</strong></em>” section below for more information).</li></ul><ul id="def0fe84-f931-4026-b8df-89caf3f26974" class="bulleted-list"><li style="list-style-type:disc"><strong>Automatically or indirectly from you</strong>. For example, through and as a result of your use of and access to the Services. We also collect IP addresses and browser types from the devices you use.</li></ul><ul id="4813fd21-f4b8-4c9a-87bf-c0509c5fbd7c" class="bulleted-list"><li style="list-style-type:disc"><strong>From our service providers</strong>.</li></ul></div></p><p id="470f5a75-8ea2-4ed2-a29a-9c8ec38bf84f" class="">
+</p><p id="ef89dba3-d1f0-4ea8-a9e8-6c08febf62a7" class=""><strong>d. Legal Bases for Processing</strong></p><p id="29634f66-9638-427b-9178-dfe80f3eb6c9" class="">We process personal data for, or based on, one or more of the following legal bases:<div class="indented"><ul id="083a4896-cb35-4f6b-950d-955ae19e3b60" class="bulleted-list"><li style="list-style-type:disc"><strong>Performance of a Contract</strong>. By using the Services, you have contracted with us through the Terms of Service, and we will process certain personal data to perform under that contract.</li></ul><ul id="02afa3fa-d471-4122-9c3f-94acd222e8a7" class="bulleted-list"><li style="list-style-type:disc"><strong>Legitimate Interests</strong>. We may process personal data for our legitimate interests, including complying with any applicable law, rule or regulation, investigation or remedy; enforcing our Terms of Service; protecting our, our users&#x27; or others&#x27; rights, property and safety; and detecting and resolving any fraud or security concerns.</li></ul><ul id="365094b6-88c3-40bd-a79e-e09d7943d5c2" class="bulleted-list"><li style="list-style-type:disc"><strong>Compliance with Legal Obligations and Protection of Individuals</strong>. We may process personal data to comply with our legal obligations, including as required by valid legal process, governmental request, and to protect those individuals who use our Services and others.</li></ul></div></p><p id="98d8dec3-2e3a-42fe-a8c8-decee0437934" class="">
+</p><p id="bc915762-8fc0-4622-97d0-93b0fd7c5cc0" class=""><strong>e. Who We Share Your Personal Data With</strong></p><p id="b12080b7-6c21-450f-b5f5-39a9bcba0ce8" class="">We share personal data with the following categories of third parties:<div class="indented"><ul id="261306d1-3251-4e7f-b56e-1ccd41b58a8c" class="bulleted-list"><li style="list-style-type:disc">Our service providers.</li></ul><ul id="a0185484-af6b-4559-87b3-bde51969813b" class="bulleted-list"><li style="list-style-type:disc">Our affiliated entities.</li></ul><ul id="2ce8912c-6f68-4757-a35d-2cb42bba3e81" class="bulleted-list"><li style="list-style-type:disc">Government agencies or regulators when permitted or required to do so by law; in response to a request from a law enforcement agency or authority or any regulatory authority; and/or to protect the integrity of the Services or our interests, rights, property, or safety, and/or that of our users and others.</li></ul></div></p><p id="2519ed28-c61b-4bca-b2f8-064481c3f937" class="">
+</p><p id="88e126ea-c77b-43f4-95b4-e7cddb789417" class=""><strong>f. Personal Data We Share</strong></p><p id="68c3f185-c62a-41b2-a29f-ac6a3bbdf4be" class="">In the past twelve (12) months, we shared with the following categories of third parties the following categories of personal data for a business purpose:<div class="indented"><ul id="3c9eb853-c3eb-4599-8aea-0a35ffd569c3" class="bulleted-list"><li style="list-style-type:disc"><strong>Identifiers (e.g. name, address, email address, government ID, IP address):</strong> Service providers.</li></ul><ul id="19f83b29-29e0-4760-bb6e-076a454be1e4" class="bulleted-list"><li style="list-style-type:disc"><strong>Identifiers (e.g. account name):</strong> Other Creators and Fans.</li></ul><ul id="f39e2322-2fbb-4b26-acbd-65b8ba7e6243" class="bulleted-list"><li style="list-style-type:disc"><strong>Audio, electronic, visual, thermal, olfactory, or similar information (e.g. content you create):</strong> Service providers.</li></ul></div></p><p id="9ad798ea-5241-457d-b6ff-6c440fb53a25" class="">
+</p><p id="09233d91-401a-4bc0-b546-cff88d6640a2" class="">
+</p></div></p><p id="11037307-52b3-4601-a10c-b71e823372a8" class=""><strong>3.</strong> <strong>YOUR RIGHTS REGARDING PERSONAL DATA</strong></p><p id="0942aacb-2958-4573-a9f7-16fc240c54dd" class="">You have certain rights regarding the collection and processing of personal data. You may exercise these rights, to the extent they apply to you, by contacting us at the information provided at the end of this Privacy Notice, or by following instructions provided in this Privacy Notice or in communications sent to you.</p><p id="ab9d543a-e4ee-4644-9c82-1d856d72b119" class="">Your rights vary depending on the laws that apply to you, but may include:<div class="indented"><ul id="00250759-956f-473e-862e-caa2c9ce6adb" class="bulleted-list"><li style="list-style-type:disc">The right to know whether, and for what purposes, we process your personal data;</li></ul><ul id="154dc270-ba5d-4daa-b11f-ddde002c4112" class="bulleted-list"><li style="list-style-type:disc">The right to be informed about the personal data we collect and/or process about you;</li></ul><ul id="18b721e6-d96c-45e5-a8f2-c46da1f70324" class="bulleted-list"><li style="list-style-type:disc">The right to learn the source of personal data about you we process;</li></ul><ul id="52753748-4961-47d1-ab6c-d8343e32247e" class="bulleted-list"><li style="list-style-type:disc">The right to access, modify, and correct personal data about you (see the “<em><strong>Accessing, Modifying, Rectifying, and Correcting Collected Personal Data</strong></em>” section below for more information);</li></ul><ul id="06617104-b0e7-4a6b-ba75-bf3e624a00b9" class="bulleted-list"><li style="list-style-type:disc">The right to know with whom we have shared your personal data with, for what purposes, and what personal data has been shared (including whether personal data was disclosed to third parties for their own direct marketing purposes);</li></ul><ul id="be446d3b-d19a-423d-afdc-3fd0f36c20f3" class="bulleted-list"><li style="list-style-type:disc">The right to withdraw your consent, where processing of personal data is based on your consent; and</li></ul><ul id="4dba5d9d-dc9c-4330-b40a-f8ad555a7047" class="bulleted-list"><li style="list-style-type:disc">The right to lodge a complaint with a supervisory authority located in the jurisdiction of your habitual residence, place of work, or where an alleged violation of law occurred</li></ul><p id="61cb7cf8-9b2b-4945-b3f2-946442de9847" class="">
+</p><p id="b6da8b4e-ae10-4663-89bb-69544a88153c" class=""><strong>a. Accessing, Modifying, Rectifying, and Correcting Collected Personal Data</strong>.</p><p id="e5ab5220-9522-4ab4-9657-d6eba4f423ba" class="">We strive to maintain the accuracy of any personal data collected from you, and will try to respond promptly to update our records when you tell us the information in our records is not correct. However, we must rely upon you to ensure that the information you provide to us is complete, accurate, and up-to-date, and to inform us of any changes. Please review all of your information carefully before submitting it to us. Any updates or corrections to your information may be made through your account settings.</p><p id="c61c96fc-e6f7-42cd-a8e0-f2a4c6a8a944" class="">Depending on the laws that apply to you, you may obtain from us certain personal data in our records. If you wish to access, review, or make any changes to personal data you have provided to us through the Services, please contact us at the information provided at the end of this Privacy Notice. We reserve the right to deny access as permitted or required by applicable law.</p><p id="38a41e77-a986-4c81-a2dd-d3f4b5de13af" class="">
+</p></div></p><p id="e95d6d55-eb91-4360-aca1-84d8387b1351" class=""><strong>4.</strong> <strong>YOUR CHOICES</strong></p><p id="a61f2db6-5b1b-489d-aca5-fff8d75521e7" class="">You have choices about certain information we collect about you, how we communicate with you, and how we process certain personal data. When you are asked to provide information, you may decline to do so; but if you choose not to provide information that is necessary to provide some of our Services, you may not be able to use those Services. In addition, it is possible to change your browser settings to block the automatic collection of certain information.<div class="indented"><p id="8b1d9fa2-5f9f-4d5f-8bc8-1f5326ae71d6" class=""><em><strong>a. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Communications Opt-Out</strong></em></span>. You may opt out of receiving email communications from us at any time by following the opt-out link or other unsubscribe instructions provided in any email message received, by contacting us as provided at the end of this Privacy Notice, or by changing your notification preferences in account setting. you wish to opt out by sending us an email to the address provided below, please include “Opt-Out” in the email’s subject line and include your name and the email address you used to sign up for communications in the body of the email. Note, that if you do business with us in the future, you may not, subject to applicable law, opt out of certain automated notifications, such as order or subscription confirmations, based on business transactions (e.g., e-commerce).</p><p id="c6e8a7a4-9b93-4f87-a020-ecbd12342d3b" class=""><em><strong>b. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Location Information</strong></em></span>. If you want to limit or prevent our ability to receive location information from you, you can deny or remove the permission for certain Services to access location information or deactivate location services on your device. Please refer to your device manufacturer or operating system instructions for instructions on how to do this.</p><p id="1330ffd1-7707-43db-bdf2-ffcfa985541a" class=""><em><strong>c. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Cookies and Web Tracking</strong></em></span>. Consult our <strong>Cookie Notice</strong> for more information about how to control and/or opt out of certain web tracking technologies.</p><p id="69b20c91-3de6-4a4b-aeea-9f34987dce7a" class="">
+</p></div></p><p id="2a6260aa-a565-4013-8c42-d26b07d86141" class=""><strong>5.</strong> <strong>PROTECTING PERSONAL DATA</strong></p><p id="b4fb4318-2b57-454c-ad27-60f9ace18f79" class="">We use reasonable and appropriate physical, technical, and organizational safeguards designed to promote the security of our systems and protect the confidentiality, integrity, availability, and resilience of personal data. Those safeguards include: (i) the encryption of personal data where we deem appropriate; (ii) taking steps to ensure personal data is backed up and remains available in the event of a security incident; and (iii) periodic testing, assessment, and evaluation of the effectiveness of our safeguards.</p><p id="39dd23d9-8ddf-45da-b566-f6cc7184c0c4" class="">However, no method of safeguarding information is completely secure. While we use measures designed to protect personal data, we cannot guarantee that our safeguards will be effective or sufficient. In addition, you should be aware that Internet data transmission is not always secure, and we cannot warrant that information you transmit utilizing the Services is or will be secure.</p><p id="131a391b-ab0c-41e7-888f-ccae8ca2b160" class="">
+</p><p id="9b74e05a-12bd-4e7d-ac5e-9c829f30b66e" class=""><strong>6.</strong> <strong>RETENTION OF PERSONAL DATA.</strong></p><p id="fdaf7ea8-3ed6-47e2-8bf7-1f1879d35e96" class="">We retain personal data for a period of six (6) months after a user closes their account, and certain personal data for longer periods to the extent we deem necessary to carry out the processing activities described above, including but not limited to compliance with applicable laws, regulations, rules and requests of relevant law enforcement and/or other governmental agencies, and to the extent we reasonably deem necessary to protect our and our partners’ rights, property, or safety, and the rights, property, and safety of our users and other third parties. Under applicable law, we are required to retain certain financial information for seven (7) years.</p><p id="fae0a6c2-e805-4f4e-b4a5-547b585745e1" class="">
+</p><p id="ca1a97a8-8fa1-4b8d-8225-77a1f90e7ccb" class=""><strong>7.</strong> <strong>OTHER IMPORTANT INFORMATION ABOUT PERSONAL DATA AND THE SERVICES.</strong><div class="indented"><p id="a31bc785-bd3f-44d0-acd5-c17ebdffb4c2" class=""><em><strong>a. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Identity Verification</strong></em></span>. We require checks for Creators to ensure that we do not knowingly offer our Services to or collect personal data from anyone under 18 or anyone using a false identity, and offer checks as an option for Fans. These checks involve providing certain information to one or more of our service providers, currently Ondato, Aristotle, and Jumio which verify your identity. If you commence the registration process, you do so with the understanding that your personal data will be transferred to Ondato and processed subject to their privacy policy and terms and conditions, Aristotle and processed subject to their privacy policy and terms and conditions, or Jumio and processed subject to their privacy policy and terms and conditions. Ondato, Aristotle, and Jumio all require that you submit your passport or other government identification document, and use facial analysis software to verify your identity. Ondato also requires that you provide a photo of yourself holding your government identification as part of the verification process.</p><p id="f8322a58-c08e-4d17-b820-845047bcb607" class=""><em><strong>b. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Payment Information</strong></em></span>. Payments made by Fans to access content are processed by our third party payment providers. For example, when you make a payment that is processed by a payment provider, you will provide that third party with your credit card number, credit card expiration date, and security code, which they process and store subject to their privacy policy and terms of service. We do not receive your full credit card number, credit card expiration date, or the security code. Instead, the payment provider provides us with a “token” that represents your account, your card’s expiration date, card type and the first two and last four digits of your card number. If you are required to provide your name and email address to the payment provider, then they also provide us with that information. Payments issued to Creators for their content are made by FansZila using the bank account information that we have collected and stored.</p><p id="bc2d7c31-e1e5-4e6f-a191-2f45b58ea246" class=""><em><strong>c. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Collection of Personal Data from Children</strong></em></span>. Our Services are not intended for anyone under 13. Anyone under 13 years of age is not permitted to use the Services, and we do not knowingly collect information from children under the age of 13. By using the Services, you represent that you are 13 years of age or older.</p><p id="5a926e31-6936-4252-9017-2c62aebae187" class=""><em><strong>d. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Third-Party Websites and Services</strong></em></span>. As a convenience, we may reference or provide links to third- party websites and services, including those of unaffiliated third parties, our affiliates, service providers, and third parties with which we do business (including, but not limited to, our service providers). When you access these third-party services, you leave our Services, and we are not responsible for, and do not control, the content, security, or privacy practices employed by any third-party websites and services. You access these third-party services at your own risk. This Privacy Notice does not apply to any third-party services; please refer to the Privacy Notices or policies for such third-party services for information about how they collect, use, and process personal data.</p><p id="09ca002e-4e2d-4a35-a113-0173d38f9084" class=""><em><strong>e. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Business Transfer</strong></em></span>. We may, in the future, sell or otherwise transfer some or all of our business, operations or assets to a third party, whether by merger, acquisition or otherwise. Personal data we obtain from or about you via the Services may be disclosed to any potential or actual third- party acquirers and may be among those assets transferred.</p><p id="d5b2c1d1-ccdb-4cde-a22e-7332056706c1" class=""><em><strong>f. </strong></em><span style="border-bottom:0.05em solid"><em><strong>Do Not Track</strong></em></span>. We currently do not use any cross-site tracking technologies and do not currently process or comply with any web browser’s “do not track” signal or similar mechanisms. Note, however, that you may find information about how to block or reject certain tracking technologies in our <strong>Cookie Notice</strong>.</p><p id="362e63e1-5873-4b0e-a62f-05b58aeab315" class=""><em><strong>g. </strong></em><span style="border-bottom:0.05em solid"><em><strong>International Use</strong></em></span>. Your personal data will be stored and/or processed in the United States, as well as in the European Union, Canada, Hong Kong, Russia, Singapore, Switzerland, Thailand, Ukraine and the United Kingdom. By your use of the Services, you acknowledge that we will transfer your data to, and store your personal data in, the above countries, which may have different data protection rules than in your country, and personal data may become accessible as permitted by law in the above countries, including to law enforcement and/or national security authorities in the those countries. For transfers of data into and out of the European Economic Area, pursuant to Article 46 of the General Data Protection Regulation, we use data transfer agreements subject to EU-approved standard contractual clauses.</p><p id="808aa72b-c641-480e-8ccb-3ffb381265ee" class="">
+</p></div></p><p id="ede32b8d-2033-4646-a476-ad17d8b3e4e8" class=""><strong>8.</strong> <strong>MODIFICATIONS AND UPDATES TO THIS PRIVACY NOTICE</strong></p><p id="23e5a83e-8e74-4025-bcfe-24f21004c128" class="">This Privacy Notice replaces all previous disclosures we may have provided to you about our information practices with respect to the Services. We reserve the right, at any time, to modify, alter, and/or update this Privacy Notice, and any such modifications, alterations, or updates will be effective upon our posting of the revised Privacy Notice. We will use reasonable efforts to notify you in the event material changes are made to our processing activities and/or this Privacy Notice, such as by posting a notice on the Services or sending you an email. Your continued use of the Services following our posting of any revised Privacy Notice will constitute your acknowledgment of the amended Privacy Notice.</p><p id="4737a6fd-fa52-443d-b6e6-57d3050d0c81" class="">
+</p><p id="79c38795-3982-4f53-a22a-b880a97c3f43" class=""><strong>9.</strong> <strong>APPLICABILITY OF THIS PRIVACY NOTICE</strong></p><p id="101255c8-ba9a-4f7e-a2f2-494ce9d6a135" class="">This Privacy Notice is subject to the Terms of Service and Acceptable Use Policy that govern your use of the Services. This Privacy Notice applies regardless of the means used to access or provide information through the Services.</p><p id="39f3e12b-26b1-4dde-a732-fdf61dd85958" class="">This Privacy Notice does not apply to information from or about you collected by any third-party services, applications, or advertisements associated with, or websites linked from, the Services. The collection or receipt of your information by such third parties is subject to their own privacy policies, statements, and practices, and under no circumstances are we responsible or liable for any third party’s compliance therewith.</p><p id="9788c8e9-aaa2-443d-a7fe-c6fe6f60dd99" class="">
+</p><p id="ffbf9f9d-69c7-4cd2-87a6-8c8dec9b4495" class=""><strong>10.</strong> <strong>ADDITIONAL INFORMATION AND ASSISTANCE</strong></p><p id="8691a8c9-a0a9-4fa3-8473-966c6bf1cbf4" class="">If you have any questions or concerns about this Privacy Notice and/or how we process personal data, please contact us at <a href="mailto:privacy@fanszila.com">privacy@fanszila.com</a>.</p><p id="adfdd7b5-48b2-438b-b78d-ea896da67265" class="">In addition, we have appointed a data protection officer (“DPO”) who is responsible for, among other things, responding to questions, requests, and concerns in relation to this Privacy Notice and our use of personal data. You may contact the DPO as follows:<div class="indented"><p id="bc001520-7431-408c-a488-c09afd61c773" class="">Data Protection Officer</p><p id="0cc12db7-6ca7-4f14-ab3d-bfc3b0d244c9" class="">DPO@fanszila.com</p><p id="3ee39edc-41e9-4692-a6ba-62aac7a95574" class="">
+</p><p id="31fbe32b-a3d8-43af-95ac-ee327c6f9799" class="">
+</p></div></p></div></article></body></html>

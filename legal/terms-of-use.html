@@ -1,0 +1,660 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>TERMS OF SERVICE</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+}
+
+.simple-table-header {
+	background: rgb(247, 246, 243);
+	color: black;
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(145, 145, 142, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(187, 132, 108, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(215, 129, 58, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 148, 51, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(108, 155, 125, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(91, 151, 189, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(167, 130, 195, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(205, 116, 159, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(225, 111, 100, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="73e61b69-64ab-4f24-bdbf-d2d46fb8012d" class="page sans"><header><h1 class="page-title"><strong>TERMS OF SERVICE</strong></h1></header><div class="page-body"><nav id="4dfec20d-e7e6-4c11-a73a-e53230785594" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#ee9338f2-9cfa-4c06-8c42-33f624271ad1">TERMS OF USE FOR ALL USERS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#a9097f7c-9369-4a14-a0ee-6712083266b8">TERMS OF USE FOR FANS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#d05b6a17-f3a3-49b2-bca5-1ccd2aaa62fb">TERMS OF USE FOR CREATORS</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#718faa3c-5626-46c3-8c0b-561a109f3b14">ACCEPTABLE USE POLICY</a></div></nav><h2 id="ee9338f2-9cfa-4c06-8c42-33f624271ad1" class="">TERMS OF USE FOR ALL USERS</h2><p id="3308378d-d9ed-4671-8006-f1e515a8e496" class=""><strong>BY USING OUR WEBSITE YOU AGREE TO THESE TERMS – PLEASE READ THEM CAREFULLY</strong></p><ol type="1" id="a4b5abfd-b33b-472a-9b7c-af33f3db72ac" class="numbered-list" start="1"><li><strong>Introduction:</strong> These Terms of Use for all Users govern your use of FansZila and your agreement with us.</li></ol><ol type="1" id="3b7a2849-18c4-4fcc-9c9c-6cac3e060452" class="numbered-list" start="2"><li><strong>Interpretation:</strong> In the Terms of Service:<ol type="a" id="57f7654b-2cb6-4ef6-be1e-f5e12f6b2834" class="numbered-list" start="1"><li>we refer to our website as &quot;<strong>FansZila</strong>&quot;, including when accessed via the URL www.FansZila.com;</li></ol><ol type="a" id="ca070dbc-a850-4188-a574-b07e1ec231ee" class="numbered-list" start="2"><li>references to &quot;<strong>we</strong>&quot;, &quot;<strong>our</strong>&quot;, &quot;<strong>us</strong>&quot; are references to Fanszila International Limited, the operator of FansZila;</li></ol><ol type="a" id="8d2469b8-5779-42e7-9927-d6c33ac1305f" class="numbered-list" start="3"><li>&quot;<strong>Content</strong>&quot; means any material uploaded to FansZila by any User (whether a Creator or a Fan), including any photos, videos, audio (for example music and other sounds), livestream material, data, text (such as comments and hashtags), metadata, images, interactive features, emojis, GIFs, memes, and any other material whatsoever;</li></ol><ol type="a" id="0b6bf676-17ce-47df-801a-8d75cd4f42be" class="numbered-list" start="4"><li>&quot;<strong>Creator</strong>&quot; means a User who has set up their FansZila account as a Creator account to post Content on FansZila to be viewed by other Users;</li></ol><ol type="a" id="6a1e736e-7a1c-4146-9b74-dfb06371e3a3" class="numbered-list" start="5"><li>&quot;<strong>Fan</strong>&quot; means a User who follows a Creator and is able to view the Creator&#x27;s Content;</li></ol><ol type="a" id="d298484c-e5ec-4295-9b14-edc94dd624ac" class="numbered-list" start="6"><li>&quot;<strong>Fan/Creator Transaction</strong>&quot; means any transaction between a Fan and a Creator on FansZila by which access is granted to the Creator&#x27;s Content including in any of the following ways: (i) a Subscription, (ii) payments made by a Fan to view a Creator&#x27;s pay-per-view Content (pay-per-view media and pay-per-view live stream), and (iii) use by the Fan of the fan interaction function on a Creator&#x27;s account;</li></ol><ol type="a" id="64c52585-88f6-428e-9871-b304ea79cf65" class="numbered-list" start="7"><li>&quot;<strong>Fan Payment</strong>&quot; means any and all payments made by a Fan to a Creator (i) in connection with a Fan/Creator Transaction, or (ii) by way of a tip for a Creator;</li></ol><ol type="a" id="ec4175bc-e1f1-4baf-b180-abb7839d7965" class="numbered-list" start="8"><li>&quot;<strong>Referring User</strong>&quot; means a User who participates in the FansZila Referral Program;</li></ol><ol type="a" id="43fd5ddd-a004-4955-9ff1-4884482f8c4c" class="numbered-list" start="9"><li>&quot;<strong>Standard Contract between Fan and Creator</strong>&quot; means the terms which govern each Fan/Creator Transaction, which can be found <a href="https://fanszila.com/contract">here</a>;</li></ol><ol type="a" id="b26c8806-1589-4186-a0eb-166d15ec902c" class="numbered-list" start="10"><li>&quot;<strong>Subscription</strong>&quot; means a Fan&#x27;s subscription to a Creator&#x27;s account (whether paid or unpaid, and whether for one month or as part of a bundle comprising a subscription for more than one month);</li></ol><ol type="a" id="3563a3d8-783f-4c44-b2a8-df12c7b5abb5" class="numbered-list" start="11"><li>&quot;<strong>Terms of Service</strong>&quot; (also called &quot;<strong>your agreement with us</strong>&quot;) means the legally binding agreement between you and us which consists of: (i) these Terms of Use for all Users, (ii) Terms of Use for Fans, (iii) Terms of Use for Creators, (iv) Privacy Policy, (v) Acceptable Use Policy, (vi) Referral Program Terms, (vii) Complaints Policy, (viii) Platform to Business Regulation Terms; and (ix) Community Guidelines;</li></ol><ol type="a" id="530af8ac-869d-48b0-854f-7bac73e4c9a8" class="numbered-list" start="12"><li>&quot;<strong>User</strong>&quot; means any user of FansZila, whether a Creator or a Fan or both (also referred to as &quot;<strong>you</strong>&quot; or &quot;<strong>your</strong>&quot;).</li></ol></li></ol><ol type="1" id="e27852b6-ba83-4723-a2bc-63c6abcbe2d6" class="numbered-list" start="3"><li><strong>Who we are and how to contact us:</strong> FansZila is operated by Fanszila International Limited. We are a limited company registered in India.<p id="5aa5a2e4-74f1-4dbd-bebe-461c2fcf603b" class="">To contact us with any questions about FansZila, please email our support team at support@fanszila.com.</p></li></ol><ol type="1" id="e4485bc2-3d68-4d14-a9bf-73ec84565d95" class="numbered-list" start="4"><li><strong>How we may change the Terms of Service:</strong> We may change any part of the Terms of Service without telling you beforehand in the following circumstances:<ol type="a" id="329c58d6-f9df-40d2-9ddc-1cb75e481803" class="numbered-list" start="1"><li>to reflect changes in laws and regulatory requirements which apply to FansZila and the services, features and programs of FansZila where such changes require FansZila to change its terms and conditions in a manner which does not allow us to give reasonable notice to you; and</li></ol><ol type="a" id="99504179-c033-485b-b17b-da5a8857ea47" class="numbered-list" start="2"><li>to address an unforeseen and imminent danger related to defending FansZila, Fans or Creators from fraud, malware, spam, data breaches or other cybersecurity risks.</li></ol><p id="2600018e-45e2-493f-9521-6760ae798f43" class="">We may also make other changes to any part of the Terms of Service, and we will give you reasonable notice of such changes by email or through FansZila, and you may contact us to end your agreement with us before the changes take effect. Once any updated Terms of Service are in effect, you will be bound by them if you continue to use FansZila.</p></li></ol><ol type="1" id="3250cb8e-9aec-4878-85d5-bbe96d2f39dc" class="numbered-list" start="5"><li><strong>We may make changes to or suspend or withdraw FansZila:</strong> We may update and change FansZila from time to time for any reason, including to reflect changes to our services, Users&#x27; needs and our business practices or to improve performance, enhance functionality or address security issues. We will try to give you reasonable notice of any major changes. We do not guarantee that FansZila, or any Content on it, will always be available or accessible without interruption. We may suspend or withdraw or restrict the availability of all or any part of FansZila for business or operational reasons. We will try to give you reasonable notice of any suspension or withdrawal if it affects you.</li></ol><ol type="1" id="3d7e6a4f-6ff6-4010-ae6c-80864f11c4ce" class="numbered-list" start="6"><li><strong>Registering with FansZila:</strong> To use FansZila you must first register and create a User account on FansZila. You must provide a valid email address, a username, and a password or authenticate using a valid Twitter or Google account. Your password should be unique (meaning that it is different to those you use for other websites) and must comply with the technical requirements of the FansZila site for the composition of passwords. To register as a User:<ol type="a" id="2396a5d8-3362-4d03-aee8-c47753fd6637" class="numbered-list" start="1"><li>you must be at least 13 years old, and you will be required to confirm this;</li></ol><ol type="a" id="97e1efe7-65bc-433c-a797-3290dad64e0b" class="numbered-list" start="2"><li>if the laws of the country or State/province where you live provide that you can only be legally bound by a contract with us at an age which is higher than 13 years old, then you must be old enough to be legally bound by a contract with us under the laws of the country or State/province where you live; and</li></ol><ol type="a" id="943d35f5-1095-474a-ba28-39be78f713bc" class="numbered-list" start="3"><li>you must be permitted by the laws of the country or State/province where you are located to join FansZila and to view any Content available on it and to use any functionality provided by it.</li></ol><ol type="a" id="193111c7-68b6-4679-b378-6df052740a37" class="numbered-list" start="4"><li>you must provide such other information or verification records as we require.</li></ol><p id="1c2e19bf-2e56-4cd2-b3ec-128df6686738" class="">If you do not meet the above requirements, you must not access or use FansZila.</p></li></ol><ol type="1" id="86ee0a4c-b908-4093-9c69-3bbf43a8149c" class="numbered-list" start="7"><li><strong>Your commitments to us:</strong> When you register with and use FansZila, you make the following commitments to us:<ol type="a" id="e74f8037-6246-4f4e-ba14-d80fe7610f43" class="numbered-list" start="1"><li>If you previously had an account with FansZila, you confirm that your old account was not terminated or suspended by us because you violated any of our terms or policies.</li></ol><ol type="a" id="ef15dad4-37a7-4901-8bcd-f86351bf7438" class="numbered-list" start="2"><li>You will make sure that all information which you submit to us is truthful, accurate and complete.</li></ol><ol type="a" id="98fd2b20-216d-4a6e-abea-74aa80eb28fa" class="numbered-list" start="3"><li>You will update promptly any of your information you have submitted to us as and when it changes.</li></ol><ol type="a" id="0350bcb7-a22b-48e4-9b23-2583124693bf" class="numbered-list" start="4"><li>You consent to receiving communications from us electronically, including by emails and messages posted to your FansZila account, and to the processing of your personal data as more fully detailed in our Privacy Policy.</li></ol><ol type="a" id="e9732210-8cf9-4841-aa13-a1e64ea426b5" class="numbered-list" start="5"><li>You will keep your account/login details confidential and secure, including your user details, passwords and any other piece of information that forms part of our security procedures, and you will not disclose these to anyone else. You will contact support@fanszila.com promptly if you believe someone has used or is using your account without your permission or if your account has been subject to any other breach of security. You also agree to ensure that you log out of your account at the end of each session, and to be particularly careful when accessing your account from a public or shared computer so that others are not able to access, view or record your password or other personal information.</li></ol><ol type="a" id="1c677513-12d5-4ff8-b8ab-275900d40caa" class="numbered-list" start="6"><li>You are responsible for all activity on your account even if, contrary to the Terms of Service, someone else uses your account.</li></ol><ol type="a" id="33c1b4d2-b40a-4c73-98e7-7fdc9330e106" class="numbered-list" start="7"><li>You will comply in full with these Terms of Use for all Users, our Acceptable Use Policy and all other parts of the Terms of Service which apply to your use of FansZila.</li></ol></li></ol><ol type="1" id="362ad921-adb3-46f5-af09-60695ebc77b7" class="numbered-list" start="8"><li><strong>Rights we have, including to suspend or terminate your account:</strong><ol type="a" id="ca6f8125-e3a1-409a-aab8-a9c190417551" class="numbered-list" start="1"><li>We can but we are not obligated to moderate or review any of your Content to verify compliance with the Terms of Service (including, in particular, our Acceptable Use Policy) and/or any applicable law.</li></ol><ol type="a" id="5a089783-b850-4604-8e3d-f37d134da795" class="numbered-list" start="2"><li>It is our policy to suspend access to any Content you post on FansZila which we become aware may not comply with the Terms of Service (including, in particular, our Acceptable Use Policy) and/or any applicable law whilst we investigate the suspected non-compliance or unlawfulness of such Content. If we suspend access to any of your Content, you may request a review of our decision to suspend access to the relevant Content by contacting us at support@fanszila.com. Following our investigation of the suspected non-compliance or unlawfulness of the relevant Content, we may take any action we consider appropriate, including to reinstate access to the Content or to permanently remove or disable access to the relevant Content without needing to obtain any consent from you and without giving you prior notice. You agree that you will at your own cost promptly provide to us all reasonable assistance (including by providing us with copies of any information which we request) in our investigation. We will not be responsible for any loss suffered by you arising from the suspension of access to your Content or any other steps which we take in good faith to investigate any suspected non-compliance or unlawfulness of your Content under this section.</li></ol><ol type="a" id="770410a1-ed43-4a37-b493-2d591e80131c" class="numbered-list" start="3"><li>If we suspend access to or delete any of your Content, we will notify you via email or electronic message to your FansZila account, but we are not obligated to give you prior notice of such removal or suspension.</li></ol><ol type="a" id="e9f4e6fb-1e61-4c71-8e3c-3d80550382b7" class="numbered-list" start="4"><li>We reserve the right in our sole discretion to terminate your agreement with us and your access to FansZila for any reason by giving you 30 days’ notice by email or electronic message to your FansZila account. We can also suspend access to your User account or terminate your agreement with us and your access to FansZila immediately and without prior notice:<ul id="5bc3fd92-b88f-421a-87bc-cd3d84642cbf" class="bulleted-list"><li style="list-style-type:disc">if we think that you have or may have seriously or repeatedly breached any part of the Terms of Service (including in particular our Acceptable Use Policy), or if you attempt or threaten to breach any part of the Terms of Service in a way which has or could have serious consequences for us or another User or</li></ul><ul id="a13bc385-edf7-4580-a0d7-2b3dc4cf2879" class="bulleted-list"><li style="list-style-type:disc">if you take any action that in our opinion has caused or is reasonably likely to cause us to suffer a loss or that otherwise harms the reputation of FansZila.</li></ul><p id="765e478e-7910-46a7-b026-81e884a0bce4" class="">If we suspend access to your User account or terminate your agreement with us and your access to FansZila we will let you know. During any period when access to your User account is suspended, any Fan Payments which would otherwise have fallen due during the period of suspension will be suspended, and we may withhold all or any part of the Creator Earnings due to you but not yet paid out in accordance with section 13 of the Terms of Use for Creators.</p></li></ol><ol type="a" id="b2bec2e6-770d-4dfe-bac1-0dbfbe4aa65c" class="numbered-list" start="5"><li>Upon termination of your account, we may deal with your Content in any appropriate manner in accordance with our Privacy Policy (including by deleting it) and you will no longer be entitled to access your Content. There is no technical facility on FansZila for you to be able to access your Content following the termination of your account.</li></ol><ol type="a" id="aa5a9568-09a3-43ca-ad4c-67b5b7fdb303" class="numbered-list" start="6"><li>We can investigate any suspected or alleged misuse, abuse, or unlawful use of FansZila and cooperate with law enforcement agencies in such investigation.</li></ol><ol type="a" id="d6d28563-cb51-41fd-8e2f-146e2b62ea7c" class="numbered-list" start="7"><li>We can disclose any information or records in our possession or control about your use of FansZila to law enforcement agencies in connection with any law enforcement investigation of any suspected or alleged illegal activity, to protect our rights or legal interests, or in response to the legal process.</li></ol><ol type="a" id="0bb9c5ba-cffd-41b4-ab85-72aa785c7be5" class="numbered-list" start="8"><li>We can change the third-party payment providers used to process payments on FansZila and if we do so, we will notify you and store applicable details on your FansZila account.</li></ol><ol type="a" id="30bd2673-1f2e-48ba-bd68-b97f319332f5" class="numbered-list" start="9"><li>Other than Content (which is owned by or licensed to Creators), all rights in and to FansZila and its entire contents, features, databases, source code and functionality, are owned by us and/or our licensors. Such material is protected by copyright, and may be protected by trademark, trade secret, and other intellectual property laws.</li></ol><ol type="a" id="6f977bc4-f32f-474a-b289-5e1d9fbeaf10" class="numbered-list" start="10"><li>We are the sole and exclusive owners of any and all anonymized data relating to your use of FansZila and such anonymized data can be used by us for any purpose, including for commercial, development, and research purposes.</li></ol></li></ol><ol type="1" id="c3f0c0f2-c7db-46e1-8977-e433692c350a" class="numbered-list" start="9"><li><strong>What we are not responsible for:</strong> We will use reasonable care and skill in providing FansZila to you, but there are certain things which we are not responsible for, as follows:<ol type="a" id="660d6d20-4a9a-41b9-abaa-d4276b8b3a96" class="numbered-list" start="1"><li>We do not authorize or approve Content on FansZila, and views expressed by Creators or Fans on FansZila do not necessarily represent our views.</li></ol><ol type="a" id="978d1692-a577-42b1-bff5-45d5b3589d89" class="numbered-list" start="2"><li>We do not grant you any rights in relation to Content. Any such rights may only be granted to you by Creators.</li></ol><ol type="a" id="f8ef8ef8-3e5d-4606-af08-f1cd887a307c" class="numbered-list" start="3"><li>Your Content may be viewed by individuals that recognize your identity. We will not in any way be responsible to you if you are identified from your Content. While we may, from time to time and in our sole discretion, offer certain geofencing or geolocation technology on FansZila, you understand and agree that we do not guarantee the accuracy or effectiveness of such technology, and you will have no claim against us arising from your use of or reliance upon any geofencing or geolocation technology on FansZila.</li></ol><ol type="a" id="6e71477e-ec13-4a78-b236-d75580b98fce" class="numbered-list" start="4"><li>All Content is created, selected, and provided by Users and not by us. We are not responsible for reviewing or moderating Content, and we do not select or modify the Content that is stored or transmitted via FansZila. We are under no obligation to monitor Content or to detect breaches of the Terms of Service (including the Acceptable Use Policy).</li></ol><ol type="a" id="2e0ff3d5-4fd9-48a9-bb3f-e8db2d725391" class="numbered-list" start="5"><li>You agree that you have no obligation to follow any suggestions, comments, reviews, or instructions received from another User of FansZila and that if you choose to do so, you do so entirely at your own risk.</li></ol><ol type="a" id="93996f18-d5f2-4018-be68-cb01ca7aebd5" class="numbered-list" start="6"><li>We make no promises or guarantees of any kind that Creators or Referring Users will make a particular sum of money (or any money) from their use of FansZila (including the FansZila Referral Program).</li></ol><ol type="a" id="7f298b16-073b-4bd8-bac2-bafb2ab4f641" class="numbered-list" start="7"><li>The materials which we make accessible on FansZila for Users are for general information only. We make no promises or guarantees about the accuracy or otherwise of such materials, or that Users will achieve any particular result or outcome from using such materials.</li></ol><ol type="a" id="745ab13f-b6fe-4898-b66a-15add6944d36" class="numbered-list" start="8"><li>We do not promise that FansZila is compatible with all devices and operating systems. You are responsible for configuring your information technology, device, and computer programs to access FansZila. You should use your own virus protection software.</li></ol><ol type="a" id="e05f9609-b201-4213-9491-cca895b7ddbf" class="numbered-list" start="9"><li>We are not responsible for the availability of the internet, or any errors in your connections, device or other equipment, or software that may occur in relation to your use of FansZila.</li></ol><ol type="a" id="f07e5b1d-aaa9-4e35-aee2-7790dfda9395" class="numbered-list" start="10"><li>While we try to make sure that FansZila is secure and free from bugs and viruses, we cannot promise that it will be and have no control over the Content that is supplied by Creators.</li></ol><ol type="a" id="976eac98-a77a-45f2-bbcc-66ea2a783cce" class="numbered-list" start="11"><li>We are not responsible for any lost, stolen, or compromised User accounts, passwords, email accounts, or any resulting unauthorized activities or resulting from unauthorized payments or withdrawals of funds.</li></ol><ol type="a" id="725d13e6-5514-4ed3-8b28-8af0e0655724" class="numbered-list" start="12"><li>You acknowledge that once your Content is posted on FansZila, we cannot control and will not be responsible to you for the use which other Users or third parties make of such Content. You can delete your account at any time, but you acknowledge that deleting your account will not of itself prevent the circulation of any of your Content that may have been recorded by other Users in breach of the Terms of Service or by third parties prior to the deletion of your account.</li></ol></li></ol><ol type="1" id="4cb61990-9ea5-4990-97b8-a4e024255477" class="numbered-list" start="10"><li><strong>Intellectual property rights – ownership and licenses:</strong><ol type="a" id="12ec9bd5-476a-476e-80c1-21724d43e6c1" class="numbered-list" start="1"><li>You confirm that you own all intellectual property rights (examples of which are copyright and trademarks) in Your Content or that you have obtained all necessary rights to your Content which are required to grant licenses in respect of your Content to us and to other Users. This includes any rights required to engage in the acts covered by sub-section <strong>10(b)</strong> below in any territory in which FansZila is accessible and, in particular, in the United States of America, the United Kingdom and the European Union.</li></ol><ol type="a" id="e13abc48-36e8-4df6-b7e9-22fe58c0239e" class="numbered-list" start="2"><li>You agree to grant us a license under all your Content to perform any act restricted by any intellectual property right (including copyright) in such Content, for any purpose reasonably related to the provision and operation of FansZila. Such acts include to reproduce, make available and communicate to the public, display, perform, distribute, translate, and create adaptations or derivative works of your Content, and otherwise deal in your Content.</li></ol><ol type="a" id="72170117-e35d-4b69-8d77-54a4933d9f2c" class="numbered-list" start="3"><li>The license which you grant to us under sub-section <strong>10(b)</strong> above is perpetual, non-exclusive, worldwide, royalty-free, sublicensable, assignable and transferable by us. This means that the license will continue even after your agreement with us ends and you stop using FansZila, that we do not have to pay you for the license, and that we can grant a sub-license of your Content to someone else or assign or transfer the license to someone else. This license will allow us, for example, to add stickers, text, and watermarks to your Content, to make your Content available to other Users of FansZila, as well as to use your Content for other normal operations of FansZila. We will never sell your Content to other platforms, though we may sell or transfer any license you grant to us in the Terms of Service in the event of a sale of our company or its assets to a third party.</li></ol><ol type="a" id="853c09fd-9f39-4bee-b9a5-f60665432984" class="numbered-list" start="4"><li>Whilst we do not own your Content, you grant us the limited right to submit notifications of infringement (including of copyright or trademark) on your behalf to any third-party website or service that hosts or is otherwise dealing in infringing copies of your Content without your permission. Although we are not under any obligation to do so, we may at any time submit or withdraw any such notification to any third-party website or service where we consider it appropriate to do so. However, we do not and are under no obligation to police infringements of your Content. You agree that if we request, you will provide us with all consents and other information which we reasonably need to submit notifications of infringement on your behalf. Please see our Complaints Policy for how to make a complaint about infringement of intellectual property rights.</li></ol><ol type="a" id="94368411-63b8-40a1-9470-6002ca36da6f" class="numbered-list" start="5"><li>You waive any moral rights which you may have under any applicable law to object to derogatory treatment of any Content posted by you on FansZila. This waiver does not affect in any way your ownership of any intellectual property rights in your Content or the rights which you have to prevent your Content from being copied without your permission. The waiver is intended to allow us when dealing with your Content (as permitted by the license which you give us in section <strong>10(b)</strong> above) to add watermarks, stickers or text to your Content.</li></ol></li></ol><ol type="1" id="f27b6f6a-ad03-4086-b061-6c28acfac8d1" class="numbered-list" start="11"><li><strong>Twitter:</strong> Users have the facility to connect an active Twitter account to their FansZila account and to share certain Content in the form of FansZila posts to Twitter using the share feature. If you use this feature, you must fully comply with Twitter&#x27;s terms of service from time to time in respect of any Content shared in this way.</li></ol><ol type="1" id="03f6a659-a4fd-4cd4-815c-7a422f9b6df8" class="numbered-list" start="12"><li><strong>Linking to and from FansZila:</strong><ol type="a" id="08bc7c19-f9f8-46ff-b2c0-051972fb9e3e" class="numbered-list" start="1"><li>Links to FansZila:<ul id="db80c734-21c0-4cbc-864c-74355402e015" class="bulleted-list"><li style="list-style-type:disc">You may link to the FansZila homepage, provided you do so in a way that is fair and legal and does not damage our reputation or take advantage of it, but you must not establish a link in such a way as to suggest any form of association, approval, or endorsement on our part.</li></ul><ul id="32740d26-7643-4289-9ef4-a4a9fa42f504" class="bulleted-list"><li style="list-style-type:disc">If you are a Creator, when promoting your Creator account you must comply with our Terms of Service and the terms of service of any other website where you place a link to or otherwise promote your Creator account. When promoting your Creator account, you must not impersonate FansZila or give the impression that your Creator account is being promoted by us if this is not the case. You must not promote your FansZila account by using Google Ads or any similar advertising platform or search engine advertising service.</li></ul></li></ol><ol type="a" id="4b5f3589-e2a9-4fe5-90f8-3b28082771f3" class="numbered-list" start="2"><li>Links from FansZila: If FansZila contains links to other sites and resources provided by third parties, these links are provided for your convenience only. Such links should not be interpreted as approval by us of those linked websites or information you may obtain from them. We have no control over the contents of those sites or resources and accept no responsibility for them or for any loss or damage that may arise from your use of them. If you decide to access any of the third-party websites linked to FansZila, you do so entirely at your own risk and subject to the terms and conditions of use for such websites.</li></ol><ol type="a" id="e7774ddb-fe03-43d4-9c7a-a6041b22c22b" class="numbered-list" start="3"><li>Domain Names: In some instances, FansZila may allow Creators to register or use domain names that contain the FansZila trademark or a confusingly similar term. However, you will not register such a domain name, unless:<ul id="ec989786-3afd-4482-810f-1a4837f82cd9" class="bulleted-list"><li style="list-style-type:disc">The domain name is registered by the Creator.</li></ul><ul id="f22fdc1b-21e9-468a-b3b7-77b20015812f" class="bulleted-list"><li style="list-style-type:disc">The domain name redirects to the Creator’s FansZila profile. Domain names containing the FansZila trademark or a confusingly similar term must not direct to any other website, including link aggregators.</li></ul><ul id="df04d17e-2c23-44b9-99ce-a2b3a2ec976e" class="bulleted-list"><li style="list-style-type:disc">The Creator obtains prior written permission from FansZila and signs a licensing agreement.</li></ul><p id="590e62e7-392f-4817-ba3d-a10b62ceb144" class="">If you would like to register a domain name containing the FansZila trademark or a confusingly similar term, please contact support@fanszila.com. Failing to comply with these provisions or the licensing agreement will be considered a violation of the licensing agreement and may result in FansZila filing a domain dispute against the registrant.</p></li></ol></li></ol><ol type="1" id="27e2a399-42c0-47ea-b30a-0e888ddff1f7" class="numbered-list" start="13"><li><strong>How do I delete my account?</strong> If you want to delete your FansZila account then you may do so in the &#x27;User Account&#x27; section of your FansZila account.<ol type="a" id="1a35c07e-f739-4e5f-867b-269743e03c44" class="numbered-list" start="1"><li>If you are a Fan, the deletion of your account will take place within a reasonable time following your request.</li></ol><ol type="a" id="a29374d5-c499-4338-a410-8ee113625dd9" class="numbered-list" start="2"><li>If you are a Creator, then once you initiate the &quot;<strong>delete account</strong>&quot; process your account will remain open until the last day of your Fans&#x27; paid Subscription period, following which you will receive your final payment and your account will be deleted.</li></ol><ol type="a" id="bc41295c-6018-427f-a0c9-597bf60cd5de" class="numbered-list" start="3"><li>If you are both a Fan and a Creator then your account will be deleted in two stages (Fan first and then Creator).</li></ol><ol type="a" id="411afae0-6bbb-4de3-873a-a92d58be595b" class="numbered-list" start="4"><li>Once your account has been deleted you won&#x27;t be charged any further amounts or have access to your former FansZila account or its Content, and any subscriptions will be deleted and cannot be subsequently renewed. You will receive an email confirmation upon the successful deletion of your account. Once your account has been deleted, we may deal with your Content in any appropriate manner in accordance with our Privacy Policy (including by deleting it) and you will no longer be entitled to access your Content. There is no technical facility on FansZila for you to be able to access your Content following termination of your account.</li></ol></li></ol><ol type="1" id="abfff2f6-d2f6-4ac0-bd81-15d3d9dbbda0" class="numbered-list" start="14"><li><strong>Who is responsible for any loss or damage suffered by you?</strong><ol type="a" id="a7be0307-eaf4-4c26-8e6a-4f7d012cb78e" class="numbered-list" start="1"><li><span style="border-bottom:0.05em solid">Whether you are a consumer or business User:</span> We do not exclude or limit in any way our liability to you where it would be unlawful to do so. This includes (i) liability for death or personal injury caused by our negligence or the negligence of our employees, agents or subcontractors, and (ii) fraud or fraudulent misrepresentation.</li></ol><ol type="a" id="ebeeab5a-d7e1-4c41-b91b-3b839948fe49" class="numbered-list" start="2"><li><span style="border-bottom:0.05em solid">If you are a consumer User:</span> If you are a consumer User, you agree that:<ul id="921b6ece-b6c1-415e-9655-d97e1bbbe592" class="bulleted-list"><li style="list-style-type:disc">We and our subsidiary companies, employees, owners, representatives, and agents will not be liable to you for any loss of profit, loss of business or revenue, business interruption, loss of business opportunity, or loss of anticipated savings suffered by you arising from or in connection with your use of FansZila.</li></ul><ul id="d3f64337-5787-4403-8a1b-0024ef6e9c6c" class="bulleted-list"><li style="list-style-type:disc">If you are a consumer User and reside in the United States of America, our total liability to you for claims arising out of or related to your agreement with us shall be limited to USD 250 per claim.</li></ul></li></ol><ol type="a" id="e754b014-4a4e-4bec-9464-a10cb04bb5e6" class="numbered-list" start="3"><li><span style="border-bottom:0.05em solid">If you are a business User:</span> If you are a business User, you agree that:<ul id="ab86b5cb-4f8c-4a4b-ba8b-2c9e2635789b" class="bulleted-list"><li style="list-style-type:disc">We and our subsidiary companies, employees, owners, representatives, and agents:<ul id="e4d92ef5-7e5f-4507-acf5-043aaa4cf344" class="bulleted-list"><li style="list-style-type:circle">exclude (to the extent permitted by law) all implied conditions, warranties, representations, or other terms that may apply to FansZila or any content on it. This means that if the Terms of Service do not expressly include a promise or commitment by us, then one cannot be implied by law;</li></ul><ul id="e7fcbd18-91a7-475c-b5d6-df30c01ca8b9" class="bulleted-list"><li style="list-style-type:circle">are not responsible to you for any loss or damage suffered by you that is not a foreseeable result of our breaching the Terms of Service or our failing to use reasonable care and skill. Loss or damage is foreseeable if either it is obvious that it will happen or if, at the time you agree to the Terms of Service, both we and you knew it might happen;</li></ul><ul id="9dda5da7-862a-45c4-b47e-cf5fc1835f0a" class="bulleted-list"><li style="list-style-type:circle">won&#x27;t be liable to you for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising out of or in connection with:<ul id="860581ab-a5f0-4055-b0d8-45ee0607f24f" class="bulleted-list"><li style="list-style-type:square">your inability to use FansZila or any of its services, features or programs; or</li></ul><ul id="cf80ee94-2f83-4a00-985f-27401e6e3378" class="bulleted-list"><li style="list-style-type:square">your use of or reliance on any content (including Content) stored on FansZila;</li></ul></li></ul><ul id="179640de-f022-4a51-a33a-e99e81e9936c" class="bulleted-list"><li style="list-style-type:circle">won&#x27;t be liable to you for any:<ol type="1" id="bf6ba2b8-b7ef-4544-b473-d425940f6d57" class="numbered-list" start="1"><li>loss of profits;</li></ol><ol type="1" id="10c9257c-4793-41be-be6c-68ce1a8f6f39" class="numbered-list" start="2"><li>loss of sales, business, or revenue;</li></ol><ol type="1" id="2d6c3074-25de-46ce-ba6d-4544c978a280" class="numbered-list" start="3"><li>business interruption;</li></ol><ol type="1" id="2838c092-ff60-4605-abc5-ab5d05ff42c6" class="numbered-list" start="4"><li>loss of anticipated savings;</li></ol><ol type="1" id="487df740-2cb0-4690-a120-690d8585b839" class="numbered-list" start="5"><li>loss of business opportunity, goodwill or reputation;</li></ol><ol type="1" id="0f62100c-d8c0-4e9e-8563-ebf403ba30e9" class="numbered-list" start="6"><li>loss of data or information, including any Content; or</li></ol><ol type="1" id="ed691dc5-6a46-4c4c-ba7d-f6b133a162a7" class="numbered-list" start="7"><li>indirect or consequential loss or damage;</li></ol></li></ul><ul id="b9f25406-ff20-4ebb-b517-88a0d61e5fc3" class="bulleted-list"><li style="list-style-type:circle">won&#x27;t be liable to you for any loss or damage caused by a distributed denial-of-service attack, virus, malware, ransomware, or other technologically harmful material that may infect your computer equipment, computer programs, data, or other proprietary material due to your use of FansZila or any of its services, features or programs, or due to your downloading of any material posted on it, or on any website linked to it;</li></ul><ul id="e042f6fb-48a3-4a41-8e99-c0e6b0d105ef" class="bulleted-list"><li style="list-style-type:circle">won&#x27;t be liable to you if your Content is copied, distributed, reposted elsewhere or its copyright is infringed by another User or any third party;</li></ul><ul id="8cc57487-0dd1-46db-a45a-9b2d3e22e64f" class="bulleted-list"><li style="list-style-type:circle">won&#x27;t be liable to you for any disclosure of your identity, or any disclosure or publication of your personal information by other Users or third parties without your consent (also known as &quot;<strong>doxing</strong>&quot;);</li></ul><ul id="68ecfa0c-e783-43a3-9f3f-dd5613611976" class="bulleted-list"><li style="list-style-type:circle">won&#x27;t be liable to you for any failure or delay by us in complying with any part of the Terms of Service arising from events outside our reasonable control. If there is any failure or delay by us in complying with any part of the Terms of Service arising from an event outside our reasonable control then we will contact you as soon as possible to let you know and we will take steps to minimise the effect of the delay.</li></ul></li></ul><ul id="1a65425c-0bdf-4443-b024-e6d4c6b4804b" class="bulleted-list"><li style="list-style-type:disc">Our total liability to you for any and all claims arising out of or related to your agreement with us, whether in contract, tort (including negligence), breach of statutory duty, or otherwise shall be limited to the greater of:<ul id="fb450ea0-bdba-44f3-b71e-3c6d87bf122a" class="bulleted-list"><li style="list-style-type:circle">100% of the total fees paid by you to us in connection with your use of FansZila; and</li></ul><ul id="dc9d51b1-b5a5-46de-a566-f4793bce324b" class="bulleted-list"><li style="list-style-type:circle">USD 5,000.</li></ul></li></ul></li></ol></li></ol><ol type="1" id="0a1f53e6-71bd-4064-88b3-6c93546cad5d" class="numbered-list" start="15"><li><strong>General:</strong> You agree that:<ol type="a" id="414394c2-8c36-438b-8652-7a7aa2902945" class="numbered-list" start="1"><li>If any aspect of your agreement with us is unenforceable, the rest will remain in effect.</li></ol><ol type="a" id="7d0efb8f-b044-454e-8ab8-f5f918bc735a" class="numbered-list" start="2"><li>If we fail to enforce any aspect of your agreement with us, it will not be a waiver;</li></ol><ol type="a" id="a997e662-3316-4bc6-883f-566574bebd16" class="numbered-list" start="3"><li>We reserve all rights not expressly granted to you.</li></ol><ol type="a" id="0c7029c6-0578-418d-bd47-f1859c28c7a1" class="numbered-list" start="4"><li>No implied licenses or other rights are granted to you in relation to any part of FansZila, save as expressly set out in the Terms of Service.</li></ol><ol type="a" id="c066ffb6-0c3b-4b1b-8963-bca773a99266" class="numbered-list" start="5"><li>Your agreement with us does not give rights to any third parties, except that the exclusions and limitations of liability in section <strong>14</strong> (Who is responsible for any loss or damage suffered by you?) and the terms in section <strong>16</strong> ( Terms relating to disputes) may be enforced by our subsidiary companies, employees, owners, representatives and agents.</li></ol><ol type="a" id="99139535-cdf0-4701-af88-752f54a6e492" class="numbered-list" start="6"><li>You cannot transfer your rights or obligations under your agreement with us without our prior written consent.</li></ol><ol type="a" id="9938172d-2f09-4a39-b206-952d703bbd68" class="numbered-list" start="7"><li>Our rights and obligations under your agreement with us can be assigned or transferred by us to others. For example, this could occur if our ownership changes (as in a merger, acquisition, or sale of assets) or by law. In addition, we may choose to delegate the performance of any of our obligations under your agreement with us to any third party, but we will remain responsible to you for the performance of such obligations.</li></ol><ol type="a" id="ec1bfcbb-f597-479c-ae38-04ca4ca3bd21" class="numbered-list" start="8"><li>The Terms of Service form the entire agreement between us and you regarding your access to and use of FansZila, and supersede any and all prior oral or written understandings or agreements between us and you.</li></ol></li></ol><p id="09bcc6f9-3160-47e3-ac04-8822a1a5c665" class="">
+</p><h1 id="a9097f7c-9369-4a14-a0ee-6712083266b8" class="">TERMS OF USE FOR FANS</h1><p id="cea7e7a2-bcd2-44b9-8ea7-58e3e0a15b91" class=""><strong>BY USING OUR WEBSITE AS A FAN YOU AGREE TO THESE TERMS – PLEASE READ THEM CAREFULLY</strong></p><ol type="1" id="50989f09-85af-4b92-800c-0b10958da932" class="numbered-list" start="1"><li><strong>Introduction:</strong> These Terms of Use for Fans are additional terms which apply if you use FansZila as a Fan (also referred to as &quot;<strong>you</strong>&quot; and &quot;<strong>your</strong>&quot; in these Terms of Use for Fans). These Terms of Use for Fans form part of your agreement with us.</li></ol><ol type="1" id="633f7aa4-6c96-411f-bc88-4f0637612e66" class="numbered-list" start="2"><li><strong>Interpretation:</strong> In these Terms of Use for Fans, defined terms have the same meanings given to them in the Terms of Use for all Users. In addition:<ol type="a" id="c830a559-f892-4152-8e3e-f1ecca8e60b7" class="numbered-list" start="1"><li>&quot;<strong>VAT</strong>&quot; means India value-added tax and any other tax imposed in addition to or in substitution for it at the rate from time to time imposed and any equivalent or similar governmental, state, federal, provincial, or municipal indirect tax, charge, duty, impost or levy in any other jurisdiction; and</li></ol><ol type="a" id="4cbdea09-0c8b-461c-a69f-7bc01715e398" class="numbered-list" start="2"><li>&quot;<strong>Tax</strong>&quot; shall include all forms of tax and statutory, governmental, state, federal, provincial, local government or municipal charges, duties, imposts, contributions, levies, withholdings or liabilities wherever chargeable and whether of the UK or any other jurisdiction.</li></ol></li></ol><ol type="1" id="2e9f0e07-fd26-42b8-81ec-515df153a979" class="numbered-list" start="3"><li><strong>Other terms which will apply to your use of FansZila:</strong> The following terms will also apply to your use of FansZila and you agree to them:<ol type="a" id="038c0126-4abd-481f-99e1-422233efde3b" class="numbered-list" start="1"><li>Our <a href="https://FansZila.com/terms#terms-use-all-users">Terms of Use for all Users</a>;</li></ol><ol type="a" id="4d5cff1a-c099-4977-b498-61d50c81ef81" class="numbered-list" start="2"><li>Our <a href="https://FansZila.com/privacy">Privacy Policy</a> – which tells you howwe use your personal data and other information we collect about you;</li></ol><ol type="a" id="2d48f3d8-fc06-474d-8699-b872dfc1edba" class="numbered-list" start="3"><li>Our <a href="https://FansZila.com/terms#acceptable-use-policy">Acceptable Use Policy</a> – which tells you what you can and can&#x27;t do on FansZila;</li></ol><ol type="a" id="16173e5f-35f2-4ca1-8863-44e25cb1c962" class="numbered-list" start="4"><li>Our <a href="https://FansZila.com/terms#complaints-policy">Complaints Policy</a> – which sets out the procedure for making a complaint about any aspect of FansZila, and how we will deal with that complaint;</li></ol><ol type="a" id="a04f053d-a9fa-4f9e-8180-993ae1d4687f" class="numbered-list" start="5"><li>The <a href="https://FansZila.com/contract">Standard Contract between Fan and Creator</a> – which does not form part of your agreement with us, but which governs and sets out the terms applicable to each Fan/Creator Transaction you enter into on FansZila; and</li></ol><ol type="a" id="dfa19490-97d3-46aa-9f43-40e680061f37" class="numbered-list" start="6"><li>Our <a href="https://FansZila.com/help">Community Guidelines</a> – which provide additional terms and guidance regarding your interactions with <a href="https://FansZila.com/">FansZila</a>.</li></ol></li></ol><ol type="1" id="9e08de9c-d41b-43d1-bb68-b4122f1707db" class="numbered-list" start="4"><li><strong>Other terms which may apply to your use of FansZila:</strong> The following additional terms may apply to your use of FansZila:<ol type="a" id="d75fdcb3-f5b3-43d6-a97e-80246798c18c" class="numbered-list" start="1"><li>If you are also a Creator, the <a href="https://FansZila.com/terms#terms-use-creators">Terms of Use for Creators</a> will apply to your use of FansZila as a Creator;</li></ol><ol type="a" id="ca70458a-2da7-4fe4-92a0-12e0b62f5166" class="numbered-list" start="2"><li>If you are a Creator who is established or resident in the European Union or the United Kingdom, then the <a href="https://FansZila.com/terms#platform-business-regulation-terms">Platform to Business Regulation Terms</a> will also apply to you; and</li></ol><ol type="a" id="c785bb9c-80d0-4601-a750-8bee198cc50d" class="numbered-list" start="3"><li>If you participate in the FansZila referral program, the <a href="https://FansZila.com/terms#referral-program-terms">Referral Program Terms</a> will apply to your use of the FansZila Referral Program.</li></ol></li></ol><ol type="1" id="5cad6762-5896-4e25-a518-58c2848458c5" class="numbered-list" start="5"><li><strong>Your commitments to us:</strong> You warrant (which means you make a legally enforceable promise) that:<ol type="a" id="f6e4d257-0aeb-4311-8e7d-5a48a7df2f7a" class="numbered-list" start="1"><li>you are at least 18 years old;</li></ol><ol type="a" id="53bd60cf-2648-4bf9-ba5f-12b41f17eaa6" class="numbered-list" start="2"><li>if the laws of the country or State/province where you live provide that you can only be legally bound by a contract at an age which is higher than 18 years old, then you are old enough to be legally bound by a contract under the laws of the country or State/province where you live;</li></ol><ol type="a" id="6285e74c-aa39-4537-8955-bdede8040c86" class="numbered-list" start="3"><li>you will provide such other information or verification records as we require.</li></ol><ol type="a" id="d8519358-97c2-4f90-aaf1-cdd78c23c989" class="numbered-list" start="4"><li>you are permitted by the laws of the country or State/province where you are located to join FansZila and to view any Content available on it and to use any functionality provided by it; and</li></ol><ol type="a" id="dd2925c3-9a14-4eac-8115-e2573eff9450" class="numbered-list" start="5"><li>you are able and willing to make payment (where required) to view Content available on FansZila which you wish to view and to use any functionality provided by FansZila that you wish to use.</li></ol></li></ol><ol type="1" id="f0c52ebe-175f-4372-910d-b1cf7688b6dd" class="numbered-list" start="6"><li><strong>Content - general terms:</strong> In addition to the terms set out elsewhere in the Terms of Service (in particular in our <a href="https://FansZila.com/terms#acceptable-use-policy">Acceptable Use Policy</a>), the following terms apply to the Content posted, displayed, uploaded or published by you as a Fan on FansZila:<ol type="a" id="3194fe47-1dd7-4fbb-9478-40321b02b2b3" class="numbered-list" start="1"><li>You warrant (which means that you make a legally enforceable promise to us) that for each item of Content which you post, display, upload or publish on FansZila:<ol type="i" id="6278aadc-40ac-4947-9fd5-c9139670d441" class="numbered-list" start="1"><li>the Content complies in full with the Terms of Service (and in particular our <a href="https://FansZila.com/terms#acceptable-use-policy">Acceptable Use Policy</a>);</li></ol><ol type="i" id="de922762-fc55-4236-99e8-8548a3356e86" class="numbered-list" start="2"><li>you either own your Content (and all intellectual property rights in it) or have a valid license to your Content; and</li></ol><ol type="i" id="fa69fcaf-7eab-4443-82b2-c096c2f7279f" class="numbered-list" start="3"><li>if your Content includes or uses any third-party material, you have secured all rights, licenses, written consents and releases that are necessary for the use of such third-party property in your Content and for the subsequent use and exploitation of that Content on FansZila.</li></ol></li></ol><ol type="a" id="d5c115e8-b742-41dd-9b51-275d742033d6" class="numbered-list" start="2"><li>You agree that you will be liable to us and indemnify us if any of the warranties at section <strong>6(a)</strong> is untrue. This means you will be responsible for any loss or damage we suffer as a result of any warranty being untrue.</li></ol><ol type="a" id="ee087c41-5187-4d2d-886f-6a15b8a23c68" class="numbered-list" start="3"><li>We are not responsible for and do not endorse any aspect of any Content posted by you or any other User of FansZila. We do not have any obligation to monitor any Content and have no direct control over what your Content may comprise.</li></ol></li></ol><ol type="1" id="265b8f60-b893-4bd0-8600-8b3d4bc47cd6" class="numbered-list" start="7"><li><strong>Adult material:</strong> You acknowledge that you are aware that some of the Content on FansZila contains adult material, and you agree to take this into account when deciding where to access and view Content. We will not be responsible to you if you suffer any loss or damage as a result of your accessing or viewing Content containing adult material in a way which places you in breach of any contract you have with a third party (for example, your employment contract) or in breach of any applicable law.</li></ol><ol type="1" id="a662e618-2d10-4c02-b317-5070b4247d0a" class="numbered-list" start="8"><li><strong>Subscriptions and purchases by Fans:</strong> This section describes the terms which apply to Fan/Creator Transactions:<ol type="a" id="73803c42-f3b5-4723-928e-40b03d1737ce" class="numbered-list" start="1"><li>All Fan/Creator Transactions are contracts between Fans and Creators on the terms of the <a href="https://FansZila.com/contract">Standard Contract between Fan and Creator</a>. Although we facilitate Fan/Creator Transactions by providing the FansZila platform and storing Content we are not a party to the <a href="https://FansZila.com/contract">Standard Contract between Fan and Creator</a> or any other contract which may exist between a Fan and Creator, and are not responsible for any Fan/Creator Transactions.</li></ol><ol type="a" id="abe4f5af-4211-471a-bcbd-8cdfd0379c99" class="numbered-list" start="2"><li>Creators are solely responsible for determining (within the parameters for pricing on FansZila) the pricing applicable to Fan/Creator Transactions and the Content to which you may be given access. All prices appear in USD only.</li></ol><ol type="a" id="e75cf85f-494e-432d-860c-dde7c710e862" class="numbered-list" start="3"><li>Fan Payments are exclusive of VAT, which shall be added at the current rate as applicable to Fan Payments.</li></ol><ol type="a" id="f2e83fce-21f8-4214-b3ff-ac0362164878" class="numbered-list" start="4"><li>To be able to enter into a Fan/Creator Transaction with a particular Creator, you must first add a payment card to your account and then click the &#x27;Subscribe&#x27; button on the relevant Creator&#x27;s profile.</li></ol><ol type="a" id="c1b33f24-5656-4a70-a4f1-d84a9214a858" class="numbered-list" start="5"><li>You authorize us and our subsidiary companies to supply your payment card details to a third-party payment provider for the purpose of processing your Fan Payment. All Fan Payments will be charged in USD. Your payment card provider may charge you currency conversion fees. We do not have control over currency exchange rates or charges imposed by your payment card provider or bank and we and our subsidiary companies will not be responsible for paying any charges or fees imposed by your payment card provider or bank.</li></ol><ol type="a" id="9f962961-78b2-4308-9067-dddb3d225a6f" class="numbered-list" start="6"><li>If you choose to provide details of two or more payment cards, then if you try to make a Fan Payment from the first card and the card is rejected for any reason, then the other payment card will be used to collect the full Fan Payment.</li></ol><ol type="a" id="5e1d9953-bd21-4616-83ee-e7b2b0c1dd70" class="numbered-list" start="7"><li>The payment provider will take (i) periodic payments from your payment card for Fan Payments which are Subscriptions; and (ii) immediate payments from your payment card for Fan Payments other than Subscriptions (including any tips paid by you to a Creator). You authorize and consent to each of these payments being debited using your supplied payment card details.</li></ol><ol type="a" id="bb3ff649-25c3-4a35-b108-fc868c6d9d0c" class="numbered-list" start="8"><li>Apart from free-trial Subscriptions, all Subscriptions to a Creator&#x27;s profile will automatically renew at the end of the relevant subscription period, except if your payment card is declined, the subscription price for the Subscription has increased, or you have turned off the &quot;Auto-Renew&quot; switch located on the relevant Creator&#x27;s profile. This means that if you want to stop subscribing to a Creator&#x27;s profile and paying continuing monthly subscription charges, you will need to turn off the &quot;Auto-Renew&quot; switch located on the relevant Creator&#x27;s profile.</li></ol><ol type="a" id="c17942f0-935c-46b7-a60f-5d412163dd73" class="numbered-list" start="9"><li>If you cancel a Subscription you will continue to be permitted to view the relevant Creator&#x27;s Content until the end of the subscription period in which you cancelled, after which no further payments will be taken from your payment card in respect of subscriptions to that Creator&#x27;s profile (unless you choose to pay for a new Subscription to that Creator’s profile), and you will no longer be able to view the relevant Creator&#x27;s Content.</li></ol><ol type="a" id="f783258b-d8fb-4fe1-9332-b2d6224c0922" class="numbered-list" start="10"><li>You agree that you will not make unjustified requests for a refund in respect of any Fan/Creator Transaction or tip to a Creator, or unjustified chargeback requests of your payment card provider in relation to any Fan/Creator Transaction or tip to a Creator. If we consider that any request for a refund or chargeback request was made by you in bad faith, we have the right to suspend or delete your User account.</li></ol><ol type="a" id="1c4543c9-c2e3-47a8-951b-b68103bcf74f" class="numbered-list" start="11"><li>Wallet credits: You can prepay an amount on FansZila (known as &quot;Wallet Credits&quot;) which you can later use to make Fan Payments. Purchases on FansZila cannot be divided - if you attempt a purchase that costs more than the total amount of your remaining Wallet Credits, your payment card will be charged the full amount for that purchase. Wallet Credits are subject to a maximum amount as determined by us from time to time. Interest will not accrue on Wallet Credits. Wallet Credits are non-refundable, which means that you are not entitled to a refund of any unused Wallet Credits.</li></ol></li></ol><ol type="1" id="d1ba1c7c-d962-4b94-b09c-5b05e487d50a" class="numbered-list" start="9"><li><strong>Suspension of your User account:</strong> If we suspend your User account in accordance with our rights under the Terms of Service, then any Fan Payments which would otherwise have fallen due during the period of suspension of your User account will be suspended during the period of the suspension of your User account.</li></ol><p id="6a2e5a29-affa-4151-9b47-0155632ee396" class=""><strong>Last updated: December 2021</strong></p><h1 id="d05b6a17-f3a3-49b2-bca5-1ccd2aaa62fb" class="">TERMS OF USE FOR CREATORS</h1><p id="1a08f51f-672e-4372-82d5-20f51812d890" class=""><strong>BY USING OUR WEBSITE AS A CREATOR YOU AGREE TO THESE TERMS – PLEASE READ THEM CAREFULLY</strong></p><ol type="1" id="5e67f0db-03bf-4f63-8bdc-2e74baadb29a" class="numbered-list" start="1"><li><strong>Introduction:</strong> These Terms of Use for Creators are additional terms which apply if you use FansZila as a Creator (also referred to as &quot;you&quot; and &quot;your&quot; in these Terms of Use for Creators). These Terms of Use for Creators form part of your agreement with us.</li></ol><ol type="1" id="4c6403e2-894c-44c9-a417-4d92576d3a84" class="numbered-list" start="2"><li><strong>Interpretation:</strong> In these Terms of Use for Creators, defined terms have the same meanings given to them in the <a href="https://FansZila.com/terms#terms-use-all-users">Terms of Use for all Users</a>. In addition:<ol type="a" id="d6675d57-3cf5-4858-98ca-c0d4779b8380" class="numbered-list" start="1"><li>&quot;<strong>VAT</strong>&quot; means United Kingdom value added tax and any other tax imposed in addition to or in substitution for it at the rate from time to time imposed and any equivalent or similar governmental, state, federal, provincial, or municipal indirect tax, charge, duty, impost or levy in any other jurisdiction; and</li></ol><ol type="a" id="55451031-46a9-4ba1-a9c2-b1b0fb630c66" class="numbered-list" start="2"><li>&quot;<strong>Tax</strong>&quot; shall include all forms of tax and statutory, governmental, state, federal, provincial, local government or municipal charges, duties, imposts, contributions, levies, withholdings or liabilities wherever chargeable and whether of the UK or any other jurisdiction.</li></ol></li></ol><ol type="1" id="e46b3ce7-985f-40eb-a72d-7b6552348cbd" class="numbered-list" start="3"><li><strong>Other terms which will apply to your use of FansZila:</strong> The following terms will also apply to your use of FansZila and you agree to them:<ol type="a" id="21dd9593-fce6-4d80-8227-a84ce53909c5" class="numbered-list" start="1"><li>Our <a href="https://FansZila.com/terms#terms-use-all-users">Terms of Use for all Users</a>;</li></ol><ol type="a" id="42153ab1-6f91-44e7-a8a7-b19c8b61653c" class="numbered-list" start="2"><li>Our <a href="https://FansZila.com/privacy">Privacy Policy</a> – which tells you how we use your personal data and other information we collect about you;</li></ol><ol type="a" id="e50aec45-2f3b-42f2-bea6-fcd4ee98bc62" class="numbered-list" start="3"><li>Our <a href="https://FansZila.com/terms#acceptable-use-policy">Acceptable Use Policy</a> – which tells you what you can and can’t do on FansZila;</li></ol><ol type="a" id="236f6142-760f-4848-8959-8096ae0e9e1e" class="numbered-list" start="4"><li>Our <a href="https://FansZila.com/terms#complaints-policy">Complaints Policy</a> – which sets out the procedure for making a complaint about any aspect of FansZila, and how we will deal with that complaint;</li></ol><ol type="a" id="395c53a1-e348-49af-ba82-16f8947a2186" class="numbered-list" start="5"><li>The <a href="https://FansZila.com/contract">Standard Contract between Fan and Creator</a> – which does not form part of your agreement with us, but which governs and sets out the terms applicable to each Fan/Creator Transaction you enter into on FansZila; and</li></ol><ol type="a" id="6aa096fa-dfcf-4ea6-aa38-5cb5de9184eb" class="numbered-list" start="6"><li>Our <a href="https://FansZila.com/help">Community Guidelines</a> – which provide additional terms and guidance regarding your interactions with <a href="https://FansZila.com/">FansZila</a>.</li></ol></li></ol><ol type="1" id="2667c9ca-1f3a-4d13-8069-390a5b0e92ee" class="numbered-list" start="4"><li><strong>Other terms which may apply to your use of FansZila:</strong> The following additional terms may apply to your use of FansZila:<ol type="a" id="d4231a0c-34d7-494c-84c2-4a62fc7f5ee3" class="numbered-list" start="1"><li>If you are established or resident in the European Union or the United Kingdom, then the <a href="https://FansZila.com/terms#platform-business-regulation-terms">Platform to Business Regulation Terms</a> will also apply to you;</li></ol><ol type="a" id="f26d29a9-bb23-410d-9bc5-4472cd3eee7b" class="numbered-list" start="2"><li>If you are also a Fan, the <a href="https://FansZila.com/terms#terms-use-fans">Terms of Use for Fans</a> will also apply to your use of FansZila as a Fan; and</li></ol><ol type="a" id="1f21d4ba-ccaf-4b30-a351-798be1ef3fb6" class="numbered-list" start="3"><li>If you participate in the FansZila Referral Program, the <a href="https://FansZila.com/terms#referral-program-terms">Referral Program Terms</a> will apply to your use of the FansZila Referral Program.</li></ol></li></ol><ol type="1" id="bd1f7f7d-09c1-488d-823c-6b3981f43b92" class="numbered-list" start="5"><li><strong>What are the fees that we charge Creators for the use of FansZila?</strong> We charge a fee to you of twenty per cent (20%) of all Fan Payments made to you (exclusive of any VAT element of the Fan Payment) (called <strong>Our Fee</strong>. The remaining eighty per cent (80%) of the Fan Payment (exclusive of any VAT element of the Fan Payment) is payable to you (called &quot;<strong>Creator Earnings</strong>&quot;). Our Fee includes the costs of providing, maintaining and operating FansZila and storing your Content. Our Fee is deducted from the Fan Payment, and Creator Earnings are paid to you in the way described in the <a href="https://FansZila.com/terms#payouts-creators">Payouts to Creators</a> section below.</li></ol><ol type="1" id="42bb3781-02ec-4f2a-89d1-9c650cab54e0" class="numbered-list" start="6"><li><strong>How to set up your account as a Creator account:</strong> To set up your account as a Creator account:<ol type="a" id="d924fc7c-683d-47ba-8475-94b715f2c502" class="numbered-list" start="1"><li>You will need on your User account page to upload a valid form of ID and two photos of you in accordance with the requirements set out <a href="https://FansZila.com/help/3/18/73">here</a>.</li></ol><ol type="a" id="30cadd30-45e0-4394-ad47-8deb82b4c63e" class="numbered-list" start="2"><li>You will need on your User account page to add a bank account or payment details of your bank account or a payment method.</li></ol><ol type="a" id="d2dc16bb-2bbd-4040-a8f9-d179a99cd199" class="numbered-list" start="3"><li>You will need on your User account page to select one of the available methods provided by FansZila as to how your Creator Earnings will be transferred to you. These methods are called <strong>Payout Options</strong>.</li></ol><ol type="a" id="924cf966-a5f2-4c91-a1e5-c91fb39347f2" class="numbered-list" start="4"><li>If you are registered for VAT in the UK, you will need to provide us with your valid UK VAT number. See the <a href="https://FansZila.com/terms#promoting-tax-compliance-vat">Promoting Tax compliance and VAT</a> section of these Terms of Use for Creators in relation to UK VAT.</li></ol><ol type="a" id="8ee3b351-83ca-493a-b90f-4a62fde7b900" class="numbered-list" start="5"><li>You may also need to submit additional information depending on the country where you live.</li></ol><ol type="a" id="570fddd3-866c-453a-a3f7-680c996ecaae" class="numbered-list" start="6"><li>We may ask you for additional age or identity verification information at any time. We may reject your application to set up a Creator account for any reason, including the reasons stated <a href="https://FansZila.com/help/3/18/74">here</a>.</li></ol><ol type="a" id="c4f6488b-622a-4bfe-a984-bbbb17a695c7" class="numbered-list" start="7"><li>Once you have set up your account as a Creator account, then if you want to charge your Fans a monthly subscription fee you will need to set your subscription price for your Fans within the range allowed by FansZila as set out <a href="https://FansZila.com/help/3/24/93">here</a>.</li></ol><ol type="a" id="5cf718b9-c5a3-44d4-8002-3262f89eb772" class="numbered-list" start="8"><li>You will then be able to start adding Content and Users will be able to subscribe to your account to become your Fans.</li></ol><ol type="a" id="b678e858-9e39-4ccb-8fe2-db519a0589b8" class="numbered-list" start="9"><li>If you lose access to your account, you can reset your password, but you will need to know the email address used to set up the account to do so. If you do not recall the email address used to set up the account, we may require you to provide identification documents and photos and any additional evidence we may reasonably require to prove your identity.</li></ol></li></ol><ol type="1" id="0409282d-a08f-4283-8aaa-7909b1406a4e" class="numbered-list" start="7"><li><strong>Personal legal responsibility of Creators:</strong> Only individuals can be Creators. Every Creator is bound personally by the Terms of Service. If you have an agent, agency, management company or other third party which assists you with the operation of your Creator account (or operates it on your behalf), this does not affect your personal legal responsibility. Our relationship is with you, and not with any third party, and you will be legally responsible for ensuring that all Content posted and all use of your account complies with the Terms of Service.</li></ol><ol type="1" id="9e0c270f-6e9b-475e-9528-99349e789cda" class="numbered-list" start="8"><li><strong>Fan/Creator Transactions:</strong> This section describes the terms which apply to Fan/Creator Transactions:<ol type="a" id="26b181de-e507-4221-a28b-fd49b0ed4dea" class="numbered-list" start="1"><li>All Fan/Creator Transactions are contracts between Fans and Creators on the terms of the <a href="https://FansZila.com/contract">Standard Contract between Fan and Creator</a>. Although we facilitate Fan/Creator Transactions by providing the FansZila platform and storing Content, we are not a party to the <a href="https://FansZila.com/contract">Standard Contract between Fan and Creator</a> or any other contract which may exist between a Fan and Creator, and are not responsible for any Fan/Creator Transaction.</li></ol><ol type="a" id="ad8940a7-7769-436a-adca-3235b19b9961" class="numbered-list" start="2"><li>Fan Payments are exclusive of VAT, which shall be added at the current rate as applicable to Fan Payments.</li></ol><ol type="a" id="647bea76-f736-4cd7-bc1c-a1121d4b3ed0" class="numbered-list" start="3"><li>When you receive confirmation from FansZila, either in the ‘Statements’ page of your User account or by email (or both), that the Fan/Creator Transaction has been confirmed, you must perform your part of such Fan/Creator Transaction (for example, by allowing the Fan to view the Content on your Creator account and/or providing the customised Content paid for by the Fan and/or allowing the Fan to use the fan interaction function paid for (as applicable)). You agree that you will indemnify us for any breach by you of this obligation (which means you will be responsible for any loss or damage (including loss of profit) we suffer as a result of you failing to comply with this obligation).</li></ol></li></ol><ol type="1" id="a79f56da-ccea-416c-acdd-5625aad1e063" class="numbered-list" start="9"><li><strong>Content – general terms:</strong> In addition to the terms set out elsewhere in the Terms of Service (in particular in our <a href="https://FansZila.com/terms#acceptable-use-policy">Acceptable Use Policy</a>), the following terms apply to the Content posted, displayed, uploaded or published by you as a Creator on FansZila:<ol type="a" id="9181988b-3d27-4e36-bfa7-107fdbef33c7" class="numbered-list" start="1"><li>Your Content is not confidential, and you authorize your Fans to access and view your Content on FansZila for their own lawful and personal use, and in accordance with any licenses that you grant to your Fans.</li></ol><ol type="a" id="e945e37b-5932-4bb5-afbf-bafc2d1a4122" class="numbered-list" start="2"><li>You warrant (which means that you make a legally enforceable promise to us) that for each item of Content which you post, display, upload or publish on FansZila:<ol type="i" id="9dfa193b-6083-4005-8b88-d78854cb5b67" class="numbered-list" start="1"><li>the Content complies in full with the Terms of Service (and in particular our <a href="https://FansZila.com/terms#acceptable-use-policy">Acceptable Use Policy</a>);</li></ol><ol type="i" id="a5b9193f-4ba1-4144-a694-a67d3bc08c6d" class="numbered-list" start="2"><li>you hold all rights necessary to license and deal in your Content on FansZila, including in each territory where you have Fans and in the United Kingdom;</li></ol><ol type="i" id="d91702bd-caf9-409a-bd5a-213eb720a26e" class="numbered-list" start="3"><li>you either own your Content (and all intellectual property rights in it) or have a valid license to offer and supply your Content to your Fans;</li></ol><ol type="i" id="a8567945-88ca-4dac-864e-14d3be072d87" class="numbered-list" start="4"><li>if your Content includes or uses any third-party material, you have secured all rights, licenses, written consents and releases that are necessary for the use of such third-party property in your Content and for the subsequent use and exploitation of that Content on FansZila; and</li></ol><ol type="i" id="1456bd22-db65-444d-b1ce-3dad50cf923e" class="numbered-list" start="5"><li>the Content is:<ol type="1" id="61d556f6-bfec-432f-95f0-b533d3059380" class="numbered-list" start="1"><li>of satisfactory quality, taking account of any description of the Content, the price, and all other relevant circumstances including any statement or representation which you make about the nature of the Content on your account or in any advertising;</li></ol><ol type="1" id="861bf954-5aa9-4e32-afdc-c9ae7250b319" class="numbered-list" start="2"><li>reasonably suitable for any purpose which the Fan has made known to you is the purpose for which the Fan is using the Content; and</li></ol><ol type="1" id="71b3d60a-ab1a-4da9-bc44-2cd9d609e963" class="numbered-list" start="3"><li>as described by you.</li></ol></li></ol></li></ol><ol type="a" id="7a1a2610-7f4a-497c-b9ab-f35dabb41c8c" class="numbered-list" start="3"><li>You agree that you will be liable to us and indemnify us if any of the warranties at section <strong>9(b)</strong> is untrue. This means you will be responsible for any loss or damage (including loss of profit) we suffer as a result of any of the warranties being untrue.</li></ol><ol type="a" id="2d0a2c17-4e57-4a05-9a97-39211eb86ed4" class="numbered-list" start="4"><li>We are not responsible for and do not endorse any aspect of any Content posted by you or any other User of FansZila. We do not have any obligation to monitor any Content and have no direct control over what your Content may comprise.</li></ol><ol type="a" id="ccd6133f-4f2a-4544-9b0d-130f07b74ae9" class="numbered-list" start="5"><li>You also agree to act as custodian of records for the Content that you upload to FansZila.</li></ol></li></ol><ol type="1" id="eb4111b0-4019-4ae9-9732-3e4b4c627a63" class="numbered-list" start="10"><li><strong>Advertising on FansZila:</strong><ol type="a" id="90a4a3e4-2cd7-4de4-9fd4-194fa794dff5" class="numbered-list" start="1"><li>If you post or upload video Content to your Creator account which is designed to promote, directly or indirectly, a third-party goods, services or image in return for payment, other valuable consideration, or self-promotional purposes (including advertising, sponsorship, and product placement) (together &quot;Advertising Content&quot;), then you must comply with the requirements set out in sections <strong>10(b)</strong> and <strong>(c)</strong> of these Terms of Use for Creators.</li></ol><ol type="a" id="003bd46c-9cb3-4b6b-b92e-19c05e4b7d23" class="numbered-list" start="2"><li>Requirements – Advertising Content: You must ensure that any Advertising Content which you post to your Creator account:<ol type="i" id="5becb1f8-b1b4-4f30-ba42-a4663dde188a" class="numbered-list" start="1"><li>does not:<ol type="1" id="a8043e27-037f-49bd-8492-93291caf5590" class="numbered-list" start="1"><li>prejudice respect for human dignity;</li></ol><ol type="1" id="22c09cab-f840-4147-87cd-22279f1688d4" class="numbered-list" start="2"><li>include or promote discrimination based on sex, racial or ethnic origin, nationality, religion or belief, disability, age or sexual orientation;</li></ol><ol type="1" id="7afd34d6-3e4f-4f5f-a32f-e23cf1cbfc58" class="numbered-list" start="3"><li>encourage behaviour prejudicial to health or safety;</li></ol><ol type="1" id="f4581e66-fab9-4554-b050-103bc312462b" class="numbered-list" start="4"><li>encourage behaviour grossly prejudicial to the protection of the environment;</li></ol><ol type="1" id="8272c099-80a5-4a03-a3a1-96f00d526851" class="numbered-list" start="5"><li>cause physical, mental or moral detriment to any person;</li></ol><ol type="1" id="87194abf-9656-457a-84f9-d951526e3042" class="numbered-list" start="6"><li>directly urge persons to purchase or rent goods or services in a manner which exploits their inexperience or credulity;</li></ol><ol type="1" id="3a1abb98-9712-458b-8e9e-846635622b2d" class="numbered-list" start="7"><li>directly encourage persons to persuade others to purchase or rent goods or services;</li></ol><ol type="1" id="241e99ff-5f81-48e2-94c9-eaf8e2cf367a" class="numbered-list" start="8"><li>exploit the trust of persons in others; or</li></ol><ol type="1" id="842f2dfa-f8b7-4eee-889e-4a38df0ad4d4" class="numbered-list" start="9"><li>unreasonably show persons in dangerous situations;</li></ol></li></ol><ol type="i" id="f8978d05-7f9d-4b19-b150-76b67e8c853d" class="numbered-list" start="2"><li>does not advertise cigarettes and other tobacco products, electronic cigarettes and electronic cigarette refill containers, illegal drugs, or any prescription-only medicine;</li></ol><ol type="i" id="838b69dd-5411-44a2-8d19-58cb53bc6e7f" class="numbered-list" start="3"><li>does not advertise, promote, or facilitate illegal gambling, and</li></ol><ol type="i" id="0da010ea-2619-4017-be74-02be528df92c" class="numbered-list" start="4"><li>in respect of any Advertising Content for alcoholic drinks, is not aimed at minors and does not encourage immoderate consumption of alcohol.</li></ol></li></ol><ol type="a" id="21941236-6c65-4020-8880-19ec05817773" class="numbered-list" start="3"><li>Transparency requirement - Advertising Content: You must declare that any Advertising Content which you post or upload to FansZila contains advertising by including the signifier <strong>#ad</strong> in the caption to the Advertising Content before posting or uploading.</li></ol></li></ol><ol type="1" id="f87bf86c-e957-4c75-8f1c-6e8e08adf101" class="numbered-list" start="11"><li><strong>Co-authored Content:</strong><ol type="a" id="e7a9f6f7-71e1-4d3e-8f79-ecdd0f978a87" class="numbered-list" start="1"><li>If you upload Content to your Creator account which shows anyone else other than or in addition to you (even if that person cannot be identified from the Content) (&quot;Co-Authored Content&quot;), you warrant (which means you make a legally enforceable promise to us) that each individual shown in any Co-Authored Content uploaded to your account is i) a Creator on FansZila; or ii) a consenting adult, and that you have verified the identity and age of each such individual and will provide supporting documents as we may request in our discretion.</li></ol><ol type="a" id="a0b7bff5-f1fd-4129-ae2f-ba042c4ff6e0" class="numbered-list" start="2"><li>You further warrant that you have obtained and keep on record written consent from each individual shown in your Co-Authored Content that such individual:<ol type="i" id="7370a8e1-c527-4175-9627-e0570dca9bf3" class="numbered-list" start="1"><li>has given his or her express, prior and fully informed consent to his or her appearance in the Co-Authored Content; and</li></ol><ol type="i" id="ec6ec6dc-7359-43b0-ab49-c1fa3b08662a" class="numbered-list" start="2"><li>has consented to the Co-Authored Content in which he or she appears being posted on FansZila.</li></ol></li></ol><ol type="a" id="cb58d2e6-0c59-4ad8-9fc4-ce7bf714e774" class="numbered-list" start="3"><li>In addition to the confirmations in sections <strong>11(a)</strong> and <strong>(b)</strong> above, you agree that if you upload Co-Authored Content where the other person or people appearing in the Content maintain a Creator account on FansZila, you will tag the FansZila account(s) of any person or people appearing in the Co-Authored Content who can be identified from it.</li></ol><ol type="a" id="35e18f17-6fdf-42d5-ba48-f69a5e5745f2" class="numbered-list" start="4"><li>If any Co-Authored Content is a work of joint authorship, you are solely responsible for obtaining any required licenses or consents from any other joint authors of the Content which are sufficient to permit such Content to be uploaded to and made available on FansZila.</li></ol><ol type="a" id="80724572-db31-46c4-9063-620d1970088e" class="numbered-list" start="5"><li>You agree that we will only arrange for Creator Earnings to be paid to the account of the Creator to which the Co-Authored Content is uploaded. The Creator who uploaded the Co-Authored Content is solely responsible for dividing and distributing any revenue generated from the Co-Authored Content between the individuals shown in such Co-Authored Content. Any such revenue-sharing agreement shall be an independent, private agreement between you and such individual(s), and we are not responsible for providing or enforcing any such agreements. You understand and agree that you are not entitled to any Creator Earnings earned on any Co-Authored Content in which you appear but which is posted on another Creator’s account. If you post Co-Authored Content on your account, we may require you to provide valid and complete legal information for all individuals which appear in the Co-Authored Content. If you fail to provide any information requested by us upon our request, we may delete the Co-Authored Content, restrict your rights and permissions to post as a Creator, terminate your account, and/or withhold all or any portion of Creator Earnings earned but not yet paid out to you.</li></ol><ol type="a" id="97ea7689-4516-415b-a8d2-4e2a1e8eb29f" class="numbered-list" start="6"><li>You agree to release us from and not to make any claims against us arising from Co-Authored Content. You agree that all claims arising from Co-Authored Content shall be made against the Creator(s) who posted Co-Authored Content or the individual(s) who appeared in the Co-Authored Content (as applicable).</li></ol></li></ol><ol type="1" id="e40c044e-3458-4ce8-afb0-87be48ca86bb" class="numbered-list" start="12"><li><strong>Payouts to Creators:</strong><ol type="a" id="b6851936-829b-49b1-be99-9e04e1d1134a" class="numbered-list" start="1"><li>All Fan Payments will be received by a third-party payment provider approved by us.</li></ol><ol type="a" id="f4ca1d96-01cf-457e-9ba1-fb8adfa077d0" class="numbered-list" start="2"><li>If you have chosen the Stripe Payout Option, Stripe will collect the Fan Payment and pay the Creator Earnings to your bank account.</li></ol><ol type="a" id="0d5697f8-48f4-41bb-80ea-adb7204b8fcc" class="numbered-list" start="3"><li>Where Stripe is not the Payout Option chosen by you, Our Fee will be deducted from the Fan Payment received and your Creator Earnings will be held by us or one of our subsidiary companies on your behalf.</li></ol><ol type="a" id="b33002c9-9eea-4c51-8ee4-7675725d9080" class="numbered-list" start="4"><li>Your FansZila account will be updated within a reasonable time with your Creator Earnings. Your Creator Earnings will become available for withdrawal by you from your FansZila account once such Creator Earnings appear in your FansZila account.</li></ol><ol type="a" id="669ac720-bd0c-4cda-9a7c-b27c4efcc4e9" class="numbered-list" start="5"><li>To make a withdrawal of Creator Earnings from your FansZila account, you must have at least the minimum payout amount in your FansZila account. Please click on the Banking page on your account to see what the minimum payout amount is for your country of residence and Payout Option.</li></ol><ol type="a" id="eedbaf2f-47c5-46dc-a21e-963d873e18ef" class="numbered-list" start="6"><li>The amount that you see in your ‘current balance’ in your FansZila account is your Creator Earnings at the relevant time. All Fan Payments and Creator Earnings are transacted in USD only. If you have chosen the &quot;Stripe&quot; Payout Option then the Fan Payments and Creator Earnings figures will be reflected in your local currency, at an exchange rate controlled by Stripe. Your bank may charge you currency conversion or transfer fees to receive the money. Additionally, your e-wallet company may charge you a fee for accessing the money. We do not have control over currency exchange rates or charges imposed by your bank or your e-wallet company, and we and our subsidiary companies will not be responsible for paying any charges imposed by your bank or your e-wallet company.</li></ol><ol type="a" id="ccadbdf4-2f08-40e7-9593-c3728dc7aec9" class="numbered-list" start="7"><li>If a Fan successfully seeks a refund or chargeback from their credit card provider in respect of a Fan Payment made to you, we may investigate and may decide to deduct from your account an amount equal to the Creator Earnings earned by you on the charged-back or refunded amount.</li></ol><ol type="a" id="45afcf25-8ef4-451b-8dc3-5268cf352205" class="numbered-list" start="8"><li>Except for Payout Options involving payment by direct bank transfer, we do not store any data disclosed by you when you register your Payout Options with a third-party payment provider.</li></ol></li></ol><ol type="1" id="fa57aedf-81ce-497e-ad97-88dc0df1f0b3" class="numbered-list" start="13"><li><strong>Circumstances in which we may withhold Creator Earnings:</strong><ol type="a" id="d6d6ab66-d04d-47c6-b3fa-a38b0b314b0c" class="numbered-list" start="1"><li>We may withhold all or any part of the Creator Earnings due to you but not yet paid out:<ol type="i" id="d091641d-f053-4d4e-988f-c713d5daf7eb" class="numbered-list" start="1"><li>if we think that you have or may have seriously or repeatedly breached any part of the Terms of Service;</li></ol><ol type="i" id="81215352-0bfd-470b-994b-bff9fce06707" class="numbered-list" start="2"><li>if you attempt or threaten to breach any part of the Terms of Service in a way which we think has or could have serious consequences for us or another User (including actual or possible loss caused to us or another User); or</li></ol><ol type="i" id="aacb508b-8ca4-4840-96a5-2e384c03faed" class="numbered-list" start="3"><li>if we suspect that all or any part of the Creator Earnings result from unlawful or fraudulent activity, either by you or by the Fan who made the Fan Payment resulting in the Creator Earnings,</li></ol><p id="dd858c90-71ab-4482-9300-13cf9ef73809" class="">for as long as is necessary to investigate the actual, threatened or suspected breach by you or the suspected unlawful activity (as applicable). If following our investigation, we conclude that (i) you have seriously or repeatedly breached any part of the Terms of Service; (ii) you have attempted or threatened to breach any part of the Terms of Service in a way which has or could have serious consequences for us or another User (including actual or possible loss caused to us or another User), and/or (iii) the Creator Earnings result from unlawful or fraudulent activity, we may notify you that you have forfeited your Creator Earnings.</p></li></ol><ol type="a" id="7684bf90-798e-47be-a1ac-472b9d722ac8" class="numbered-list" start="2"><li>We may also withhold all or any part of the Creator Earnings due to you but not yet paid out if we receive notice that you have secured, encumbered, pledged, assigned, or otherwise allowed a lien to be placed on Creator Earnings. We undertake no duty to pay Creator Earnings to third-party lienholders and may withhold payment of Creator Earnings until the lien has been removed.</li></ol><ol type="a" id="e1764c9d-9c99-43d5-b913-2661af7e27b5" class="numbered-list" start="3"><li>We shall not have any responsibility to you if we withhold or forfeit any of your Creator Earnings where we have a right to do so under these Terms of Use for Creators.</li></ol><ol type="a" id="a7f03cac-1c1b-4af4-8b36-23d52159bd8c" class="numbered-list" start="4"><li>If we are withholding all or any part of the Creator Earnings due to you and we determine that part of the Creator Earnings withheld by us is unrelated to breaches by you of the Terms of Service or suspected unlawful or fraudulent activity, then we may arrange for you to be paid the part of the Creator Earnings which we determine to be unrelated to breaches by you of the Terms of Service or suspected unlawful or fraudulent activity. However, you agree that if we consider that your breach(es) of the Terms of Service has or may cause us loss, we may withhold all Creator Earnings due to you but not yet paid and we may set off such amounts against any losses suffered by us.</li></ol><ol type="a" id="41308f1e-f8c5-4383-8d09-0f62329d190f" class="numbered-list" start="5"><li>If once we have finished our investigation we determine that Creator Earnings are forfeited, we will (unless prohibited by law) use our best efforts to ensure that any Fan Payments which resulted in forfeited Creator Earnings are returned to the relevant Fans who paid such Fan Payments.</li></ol></li></ol><ol type="1" id="f3d28772-b80d-4831-9f2f-e2e0600cd36a" class="numbered-list" start="14"><li><strong>Promoting Tax compliance and VAT:</strong><ol type="a" id="2e31f39e-47de-448f-a53c-fce66061604f" class="numbered-list" start="1"><li><strong>General:</strong><ol type="i" id="afcd389d-0703-401f-a1ed-fb42ad9bfdd4" class="numbered-list" start="1"><li>We recommend that all Creators seek professional advice to ensure you are compliant with your local Tax and VAT rules, based on your individual circumstances.</li></ol><ol type="i" id="cbccd300-37c6-4110-a2f7-4f40602c3815" class="numbered-list" start="2"><li>By using FansZila as a Creator, you warrant (which means you make a legally enforceable promise) that you have reported and will report in the future the receipt of all payments made to you in connection with your use of FansZila to the relevant Tax authority in your jurisdiction, as required by law.</li></ol><ol type="i" id="b8c389e9-cffa-486c-94a5-46ef86e0229b" class="numbered-list" start="3"><li>By using FansZila as a Creator you warrant (which means you make a legally enforceable promise) that you will at all times comply with all laws and regulations relating to Tax which apply to you. If, at any point whilst you have an FansZila account, any Tax non-compliance occurs in relation to you (including a failure by you to report earnings or the imposition on you of any penalty or interest relating to Tax) or if any litigation, enquiry, or investigation is commenced against you that is in connection with, or which may lead to, any occurrence of Tax non-compliance, you agree that you will:<ol type="1" id="9059e2af-d031-451e-9806-fca9820cace9" class="numbered-list" start="1"><li>notify us by email to <a href="mailto:vat@FansZila.com">vat@FansZila.com</a> in writing within 7 days of the occurrence of the Tax non-compliance or the commencement of the litigation, enquiry or investigation (as applicable); and</li></ol><ol type="1" id="af9bf5e5-2447-46b8-b02d-677d3092f8a0" class="numbered-list" start="2"><li>promptly provide us by email to <a href="mailto:vat@FansZila.com">vat@FansZila.com</a> with:<ol type="a" id="728bbd9c-8a3c-4f82-beae-7777bc9e146f" class="numbered-list" start="1"><li>details of the steps which you are taking to address the occurrence of the Tax non-compliance and to prevent the same from happening again, together with any mitigating factors that you consider relevant; and</li></ol><ol type="a" id="accc07d4-b015-40f7-88fc-7dca9cd20fbe" class="numbered-list" start="2"><li>such other information in relation to the occurrence of the Tax non-compliance as we may reasonably require.</li></ol></li></ol></li></ol><ol type="i" id="08f29511-15f9-4760-afbd-05378631f6dd" class="numbered-list" start="4"><li>For the avoidance of doubt, you are responsible for your own Tax affairs and we and our subsidiary companies (i) are not responsible for advising you on your Tax affairs and will not be liable in respect of any general information provided on FansZila or by <a href="mailto:support@FansZila.com">support@FansZila.com</a> in respect of Tax, and (ii) will not be liable for any non-payment of Tax by Creators.</li></ol><ol type="i" id="3dca16dd-5ebe-4726-8e85-2f0fbd167e8f" class="numbered-list" start="5"><li>We reserve the right to close your FansZila account if we are notified of or become aware of any Tax non-compliance by you.</li></ol></li></ol><ol type="a" id="bf217757-4b89-43f4-9901-97dfe4cf2a6e" class="numbered-list" start="2"><li><strong>UK VAT and UK established Creators:</strong><ol type="i" id="41befae2-63c7-4c33-a713-c350a2cf5cdf" class="numbered-list" start="1"><li>For the purposes of UK VAT only, Creators are treated as providing their services to FansZila, rather than to Fans directly.</li></ol><ol type="i" id="04292905-6d95-47c9-bf42-dd8e5c9a0857" class="numbered-list" start="2"><li>If you are a Creator registered for UK VAT:<ol type="1" id="d5552713-234b-4ce7-882f-dadf595cb550" class="numbered-list" start="1"><li>You will be treated, for VAT purposes, as charging FansZila your Creator Earnings (80% of all and any Fan Payments), together with UK VAT at the prevailing rate in force at the time of the Fan Payment;</li></ol><ol type="1" id="921bf9d5-f325-4cb5-acab-282af1011635" class="numbered-list" start="2"><li>FansZila also agrees that, subject to the terms set out in this section of these Terms of Use for Creators, you can add UK VAT at the prevailing rate in force at the time of the referral payment to the amount of any referral payments payable to you under the <a href="https://FansZila.com/terms#referral-program-terms">Referral Program Terms</a> (&quot; <strong>Referral Payments</strong>&quot;).</li></ol><ol type="1" id="40867048-a53b-4c8c-b0ba-48ed30e632e5" class="numbered-list" start="3"><li>You agree to use the FansZila VAT invoice generator tool which can be found at: <a href="https://FansZila.com/my/banking/vat/create-document">https://FansZila.com/my/banking/vat/create-document</a> to generate monthly VAT invoices, addressed to Fenix International Limited, in respect of your Creator Earnings (and Referral Payments, if any) for the relevant period together with the VAT on such Creator Earnings (and Referral Payments, if any);</li></ol><ol type="1" id="4ea12800-68e4-477c-949d-39144823ed2b" class="numbered-list" start="4"><li>The VAT element added to your Creator Earnings (and Referral Payments, if any) (the &quot;VAT Amount&quot;) will be paid to you by way of a separate payment outside of your regular Creator Earnings, provided that you must have submitted to us copies of the following before payment of the VAT Amount will be made to you:<ol type="a" id="69bd2fe7-3354-470c-9e32-bc0a08bfde7b" class="numbered-list" start="1"><li>your VAT registration number by completing this form <a href="https://FansZila.com/my/banking/vat">https://FansZila.com/my/banking/vat</a>;</li></ol><ol type="a" id="918a0fbc-6cd7-456a-a9ea-b192dc81aa91" class="numbered-list" start="2"><li>a valid VAT invoice generated and submitted using the FansZila VAT invoice generator tool and uploaded using <a href="https://FansZila.com/my/banking/vat/add-documents">https://FansZila.com/my/banking/vat/add-documents</a>; and</li></ol><ol type="a" id="1818fcd8-4086-4690-a3fa-840ff750c872" class="numbered-list" start="3"><li>a VAT return made to HM Revenue &amp; Customs, including a value of taxable supplies equal to or greater than the aggregate value of your Creator Earnings (and Referral Payments, if any) for the relevant period. You can find the monthly earning details at <a href="https://FansZila.com/my/stats/earnings">https://FansZila.com/my/stats/earnings</a>;</li></ol></li></ol></li></ol><ol type="i" id="daafc14a-b370-4cf4-9114-df69a2815b58" class="numbered-list" start="3"><li>You shall pay the VAT Amount which is paid to you directly to HM Revenue &amp; Customs.</li></ol><ol type="i" id="2723497d-5a19-4539-b1b4-aeffa334e617" class="numbered-list" start="4"><li>If you need any further information or assistance on what is needed in order to receive the VAT Amount you can email <a href="mailto:vat@FansZila.com">vat@FansZila.com</a>.</li></ol><ol type="i" id="6fab2be5-bd99-430c-b5ce-6e011f6bee07" class="numbered-list" start="5"><li>More information on who is required to register for VAT in the UK, and the VAT position for Creators whose earnings are not above the earnings threshold or who are not VAT registered can be found at <a href="https://FansZila.com/help/3/120">https://FansZila.com/help/3/120</a> and in the following guidance from HM Revenue &amp; Customs in the UK at <a href="https://www.gov.uk/vat-registration/when-to-register">https://www.gov.uk/vat-registration/when-to-register</a>.</li></ol><ol type="i" id="efe8d9fa-da76-494f-8f2d-5641db68e64d" class="numbered-list" start="6"><li>You agree that you will keep copies of all VAT invoices and VAT returns in connection with your earnings from FansZila and you will provide us with copies of such documents within 14 days of our written request that you do so. For the avoidance of doubt, it is your obligation to comply with all provisions of VAT legislation and make, give, obtain, maintain and keep accurate, complete and up-to-date records, invoices, accounts and other documents required for the purposes of the VAT legislation.</li></ol><ol type="i" id="41d97a3a-15f4-4088-8ac5-2bfc2c5c5c31" class="numbered-list" start="7"><li>If you are a Creator in the UK who is not required to register for UK VAT, then you should monitor the level of taxable sales that you make in the UK (including any Referral Payments) to ensure you have not exceeded the VAT registration threshold in the UK. It is your obligation, as a taxable person, to monitor whether you have exceeded the VAT registration threshold.</li></ol><ol type="i" id="430c2bda-6545-4b9c-9e75-cdf1da2617df" class="numbered-list" start="8"><li>We do not monitor earnings that Creators receive from other income sources. However, we will monitor the annual earnings of UK Creators on our platform, and if you are not already VAT registered and your earnings exceed the VAT registration threshold, you will receive a notification from us asking you to register for VAT. If you receive such a VAT registration notification, you agree to register for VAT as soon as possible and to send your VAT registration number to us at <a href="mailto:vat@FansZila.com">vat@FansZila.com</a>, within 6 weeks of such notification. Failure to do so may result in your FansZila account being closed.</li></ol></li></ol></li></ol><p id="34be75c8-e099-4d01-935c-11ab44094742" class=""><strong>Last updated: December 2021</strong></p><h1 id="718faa3c-5626-46c3-8c0b-561a109f3b14" class="">ACCEPTABLE USE POLICY</h1><p id="0911e8d1-7224-4228-8e6e-3f1c1785cc47" class=""><strong>BY USING OUR WEBSITE YOU AGREE TO THIS POLICY – PLEASE READ IT CAREFULLY</strong></p><p id="3c77eb34-268d-4362-adc6-a2dbc87fa7af" class="">This Policy applies to your use of FansZila and all Content on FansZila and forms part of your agreement with us. This Policy sets out what is and is not permitted on FansZila.In this Policy, defined terms have the same meanings as in our <a href="https://FansZila.com/terms#terms-use-all-users">Terms of Use for all Users</a>.</p><ol type="1" id="a22ff909-551e-4315-af70-19e4e6b18684" class="numbered-list" start="1"><li><strong>Do not</strong> use FansZila except for your own personal use and do not sell, rent, transfer, or share your account or any Content obtained from your use of FansZila to or with anyone else.</li></ol><ol type="1" id="0a31a343-51bc-4766-98a5-85db0a327ad5" class="numbered-list" start="2"><li><strong>Only</strong> use FansZila in a manner and for a purpose that is lawful.</li></ol><ol type="1" id="234dd522-96fa-4771-823a-eb9aa54ce5aa" class="numbered-list" start="3"><li><strong>Do not</strong> upload, post, display, or publish Content on FansZila that is illegal, fraudulent, defamatory, hateful, discriminatory, threatening or harassing, or which encourages or promotes violence or any illegal activity.</li></ol><ol type="1" id="b9877c60-f7c7-4a56-93f6-408f8e44c875" class="numbered-list" start="4"><li><strong>Do not</strong> use FansZila in any way which may exploit, harm, or attempt to exploit or harm any individual under 18 years old, for example by exposing them to inappropriate Content.</li></ol><ol type="1" id="520e92f0-bcd5-4a0d-8c05-e65b490cf034" class="numbered-list" start="5"><li><strong>Do not</strong> upload, post, display, or publish Content on FansZila that:<ol type="a" id="6d9f5ada-c6de-496e-9dc0-86a41b882806" class="numbered-list" start="1"><li>shows, includes or refers to:<ol type="i" id="b134c15e-eb73-4080-adbe-8a0dafa89f24" class="numbered-list" start="1"><li>any individual under 18 years old (or which refers to individuals under 18 years old generally); or</li></ol><ol type="i" id="1c993ebc-b1d7-4ac7-a6b4-163a62818a3c" class="numbered-list" start="2"><li>any other individual unless you have written documentation which confirms that all individuals shown or included or referred to in your Content are at least 18 years old, and you have a written consent from each individual to use their name or images (or both) in the Content;</li></ol></li></ol><ol type="a" id="4d977975-e538-40d4-8676-c8ece1e8cc66" class="numbered-list" start="2"><li>shows, promotes, advertises or refers to:<ol type="i" id="babacee8-e17c-4a3f-837e-746ef294a833" class="numbered-list" start="1"><li>firearms, weapons, or any goods whose sale, possession or use is subject to prohibitions or restrictions;</li></ol><ol type="i" id="1f8f7bec-c64c-4a8b-95d0-d3cafab0ab59" class="numbered-list" start="2"><li>drugs or drug paraphernalia;</li></ol><ol type="i" id="1bbb136e-e69c-4ad5-94e0-9f7cf5bdc4dc" class="numbered-list" start="3"><li>self-harm or suicide;</li></ol><ol type="i" id="bffe2cae-0b0f-4608-b0c0-45c96f4974ee" class="numbered-list" start="4"><li>incest;</li></ol><ol type="i" id="9fcc23dd-bd76-4cca-b42b-6f7dd6bc9281" class="numbered-list" start="5"><li>bestiality;</li></ol><ol type="i" id="9ec62de8-909a-41af-918b-4ea59f0a94d3" class="numbered-list" start="6"><li>violence, rape, lack of consent, hypnosis, intoxication, sexual assault, torture, sadomasochistic abuse or hardcore bondage, extreme fisting, or genital mutilation;</li></ol><ol type="i" id="020bb812-38b2-4ef6-8e41-9959cfafae7d" class="numbered-list" start="7"><li>necrophilia;</li></ol><ol type="i" id="fa6cb7a8-7248-4bf0-b427-de5bc90b154c" class="numbered-list" start="8"><li>urine, scatological, or excrement-related material;</li></ol><ol type="i" id="19e0cce4-1548-431c-975d-449de2920c4c" class="numbered-list" start="9"><li>&quot;revenge porn&quot; (being any sexually explicit material featuring any individual who has not given prior, express and fully informed consent to that material (a) being taken, captured, or otherwise memorialized, or (b) being posted and shared on FansZila);</li></ol><ol type="i" id="44785426-7464-4efc-9e32-bfa32b03f2f2" class="numbered-list" start="10"><li>escort services, sex trafficking, or prostitution;</li></ol></li></ol><ol type="a" id="82df97d1-4107-43d9-a2c4-5341dd925f20" class="numbered-list" start="3"><li>contains unsolicited sexual content or unsolicited language that sexually objectifies another User or anyone else in a non-consensual way, or contains fake or manipulated sexual content in relation to another User or anyone else (including &quot;deepfakes&quot;);</li></ol><ol type="a" id="72c1f4ca-9df0-4353-aa29-fcd2f00d376a" class="numbered-list" start="4"><li>contains, promotes, advertises or refers to hate speech (being Content intended to vilify, humiliate, dehumanize, exclude, attack, threaten, or incite hatred, fear of, or violence against, a group or individual based on race, ethnicity, national origin, immigration status, caste, religion, sex, gender identity or expression, sexual orientation, age, disability, serious disease, veteran status, or any other protected characteristic);</li></ol><ol type="a" id="359ccf4b-7182-46a6-885b-450b90c08bec" class="numbered-list" start="5"><li>contains or refers to anyone else&#x27;s personal data or private or confidential information (for example, telephone numbers, location information (including street addresses and GPS coordinates), names, identity documents, email addresses, log-in credentials for FansZila including passwords and security questions, financial information including bank account and credit card details, biometric data, and medical records) without that person&#x27;s express written consent;</li></ol><ol type="a" id="8da4fbdf-5f75-41fc-be2f-4315fb4ccdc6" class="numbered-list" start="6"><li>either:<ol type="i" id="54cb1133-9cca-4352-8684-3e2979514878" class="numbered-list" start="1"><li>in the case of Content featuring public nudity, was recorded in or is being broadcast from a country, State or province where public nudity is illegal; or</li></ol><ol type="i" id="82c6bdae-23e5-48ce-b4a0-b6cd25995b2e" class="numbered-list" start="2"><li>in the case of Content featuring sexual activities, was recorded in or is being broadcast from a public place where members of the public are reasonably likely to see the activities being performed (this does not include outdoor places where members of the public are not present, for example private property such as a private backyard, or secluded areas in nature where members of the public are not present).</li></ol></li></ol><ol type="a" id="8207916a-6a9d-4f21-a2b1-e90120600ec8" class="numbered-list" start="7"><li>gives the impression that it comes from or is approved, licensed or endorsed by us or any other person or company;</li></ol><ol type="a" id="dc6d10a1-14e4-4fd6-8f51-e2ae84363d9a" class="numbered-list" start="8"><li>causes or is calculated to cause inconvenience, or anxiety to anyone else or which is likely to upset, embarrass, or cause serious offence to anyone else;</li></ol><ol type="a" id="bad78833-52fb-4502-a9b4-0609f385df41" class="numbered-list" start="9"><li>is used or is intended to be used to extract money or another benefit from anyone else in exchange for removal of the Content; and/or</li></ol><ol type="a" id="d415fd7d-99dd-41a7-ac2f-e53191f7669e" class="numbered-list" start="10"><li>involves or promotes third-party commercial activities or sales, such as contests, sweepstakes and other sales promotions, product placements, advertising, or job posting or employment ads without our prior express consent.</li></ol></li></ol><ol type="1" id="9726ad11-3465-4261-b3b4-045f29fa3e91" class="numbered-list" start="6"><li>You must comply with any requirements set out in our <a href="https://FansZila.com/help">Community Guidelines</a>. Our Community Guidelines can be found <a href="https://FansZila.com/help">here</a>.</li></ol><ol type="1" id="d43a77ad-53ba-4f14-9c9d-b6809fc7e7eb" class="numbered-list" start="7"><li><strong>Do not</strong> use FansZila to stalk, bully, abuse, harass, threaten or intimidate anyone else.</li></ol><ol type="1" id="6e9d9d65-ca62-4381-b65d-fa8de5bfc1ac" class="numbered-list" start="8"><li><strong>Do not</strong> use FansZila to engage in misleading or deceptive conduct, or conduct that is likely to mislead or deceive any other User.</li></ol><ol type="1" id="e2b3ac83-2c1c-4181-b79d-a7974df7b5c0" class="numbered-list" start="9"><li>Respect the intellectual property rights of Creators, including by not recording, reproducing, sharing, communicating to the public or otherwise distributing their Content without authorization.</li></ol><ol type="1" id="20bc1bc0-5aef-4dd9-b1e2-4057f02d9539" class="numbered-list" start="10"><li><strong>Do not</strong> do anything that violates our or someone else&#x27;s rights, including intellectual property rights (examples of which are copyright, trademarks, confidential information, and goodwill), personality rights, unfair competition, privacy, and data protection rights.</li></ol><ol type="1" id="e46807c3-57e0-49d4-9612-0725cec89bfd" class="numbered-list" start="11"><li><strong>Do not</strong> impersonate us, one of our employees, another User, or any other person or company or falsely state or suggest any affiliation, endorsement, sponsorship between you and us or any other person or company.</li></ol><ol type="1" id="07716ad0-646f-4de9-9456-522bc04067d0" class="numbered-list" start="12"><li><strong>Do not</strong> provide false account registration information or make unauthorized use of anyone else&#x27;s information or Content.</li></ol><ol type="1" id="2b087333-ea9c-4b9b-9b11-89306619b0d8" class="numbered-list" start="13"><li><strong>Do not</strong> post or cause to be posted any Content which is spam, which has the intention or effect of artificially increasing any Creator&#x27;s views or interactions, or which is otherwise inauthentic, repetitive, misleading or low quality.</li></ol><ol type="1" id="44d2aa38-73c2-43a6-bef4-c47d6c2fb4f2" class="numbered-list" start="14"><li><strong>Do not</strong> transmit, stream, or otherwise send any pre-recorded audio or video material during a live stream or otherwise attempt to pass off recorded material as a live stream.</li></ol><ol type="1" id="bf1d1662-9a0c-4d38-a042-3685ae2ab950" class="numbered-list" start="15"><li><strong>Do not</strong> use other media or methods (for example the use of codewords or signals) to communicate anything which violates this Policy.</li></ol><ol type="1" id="666e3f87-33cd-43d1-b449-bfa20952fe03" class="numbered-list" start="16"><li><strong>Do not</strong> reproduce, print, distribute, attempt to download, modify, create derivative works of, publicly display, publicly perform, republish, download, store or transmit any Content, except as permitted under the Terms of Service.</li></ol><ol type="1" id="a8bc6b1f-8a37-44f2-af0f-dca64c27eceb" class="numbered-list" start="17"><li><strong>Do not</strong> knowingly introduce any viruses, trojans, worms, logic bombs or other material into Content which is or may be malicious or technologically harmful.</li></ol><ol type="1" id="dd846935-f6f9-4bdb-b75a-2619a5970c41" class="numbered-list" start="18"><li><strong>Do not</strong> decompile, disassemble, reverse engineer, or otherwise attempt to discover or derive the source code of FansZila.</li></ol><ol type="1" id="7dcb8df8-46b2-458c-be81-59577cb57682" class="numbered-list" start="19"><li><strong>Do not</strong> use FansZila in a way that could adversely affect our systems or security or interfere with any other User’s use of FansZila, including their ability to engage in real-time activities through FansZila.</li></ol><ol type="1" id="80a5ee3a-7b97-4e27-b51f-83615e56110a" class="numbered-list" start="20"><li><strong>Do not</strong> use any automated program, tool or process (such as web crawlers, robots, bots, spiders, and automated scripts) to access FansZila or any server, network or system associated with FansZila, or to extract, scrape, collect, harvest or gather Content or information from FansZila.</li></ol><ol type="1" id="eaeaf6f9-701e-4cf5-be74-67282fbe6f38" class="numbered-list" start="21"><li><strong>Do not</strong> use FansZila&#x27; name, logo or any related or similar names, logos, product and service names, designs, or slogans other than in the limited ways which are expressly permitted in the Terms of Service or with our prior written agreement.</li></ol><p id="cd1a44ca-2cfc-41da-81ab-d18530fae48e" class="">Breaches of this Policy may lead to your account being suspended or terminated, and access to your earnings being revoked, as set out in the Terms of Service.</p><p id="1f524500-8def-48ad-80d6-3caefc088b43" class=""><strong>Last updated: December 2021</strong></p><p id="8e852d1f-fc9e-4220-b689-f8d132790a93" class="">
+</p><p id="1c5577aa-80d4-458c-813c-e8a2313d751b" class="">
+</p></div></article></body></html>
